@@ -5,7 +5,7 @@
 ## やりたいこと
 - Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
-  
+
 ## Dataset
 ### songtype_idについて
 - 1と4の値をとる
@@ -24,3 +24,15 @@
 - [ ] [鳥コンペの上位ソリューション](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197873)
 - [ ] [評価スコア計算のPytorch実装](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/198418)
 - [ ] [切り取ったデータセット](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/199025)
+
+## 実験
+
+|実験名|Fold|local score|LB|memo|
+|--|--|--|--|--|
+|exp0001|0|0.7715|0.695|baseline|
+|exp0001|1|0.761|0.623|baseline|
+|exp0001|2|0.7775|0.596|baseline|
+|exp0001|3|0.7869|0.625|baseline|
+|exp0001|4|||baseline|
+|exp0001|CV|||baseline|
+||||||
