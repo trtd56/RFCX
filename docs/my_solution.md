@@ -32,7 +32,7 @@
 |exp0001|0|0.7715|0.695|baseline|
 |exp0001|1|0.761|0.623|baseline|
 |exp0001|2|0.7775|0.596|baseline|
-|exp0001|3|0.7869||baseline|
+|exp0001|3|0.7869|0.625|baseline|
 |exp0001|4|||baseline|
 |exp0001|CV|||baseline|
 ||||||
