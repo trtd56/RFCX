@@ -33,6 +33,9 @@
 |exp0001|1|0.761|0.623|baseline|
 |exp0001|2|0.7775|0.596|baseline|
 |exp0001|3|0.7869|0.625|baseline|
-|exp0001|4|||baseline|
-|exp0001|CV|||baseline|
+|exp0001|4|0.7862|0.627|baseline|
+|exp0001|CV|0.77662||baseline before sigmoid|
+|exp0001|CV|0.77662||baseline after sigmoid|
 ||||||
+
+
