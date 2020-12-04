@@ -5,7 +5,7 @@
 # memo
 
 ## やりたいこと
-- Adversarial
+- [ ] Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
 
 ## Dataset
@@ -39,6 +39,12 @@
 |exp0001|4|0.7862|0.627|baseline|
 |exp0001|CV|0.77662||baseline before sigmoid|
 |exp0001|CV|0.77662||baseline after sigmoid|
+||||||
+|exp0002||||CosAnealScheduler|
+||||||
+|exp0003||||lossの割合1:1:1に|
+||||||
+|exp0004||||lossのpseudo無し|
 ||||||
 
 
