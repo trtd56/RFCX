@@ -37,10 +37,16 @@
 |exp0001|2|0.7775|0.596|baseline|
 |exp0001|3|0.7869|0.625|baseline|
 |exp0001|4|0.7862|0.627|baseline|
-|exp0001|CV|0.77662||baseline before sigmoid|
-|exp0001|CV|0.77662||baseline after sigmoid|
+|exp0001|CV|0.77662|0.734|baseline before sigmoid|
+|exp0001|CV|0.77662|0.711|baseline after sigmoid|
 ||||||
-|exp0002||||CosAnealScheduler|
+|exp0002|0|0.7649|0.696|CosAnealScheduler|
+|exp0002|1|0.7929|0.626|CosAnealScheduler|
+|exp0002|2|0.7921|0.652|CosAnealScheduler|
+|exp0002|3|||CosAnealScheduler|
+|exp0002|4|||CosAnealScheduler|
+|exp0002|CV|||CosAnealScheduler|
+|exp0002|CV|||CosAnealScheduler|
 ||||||
 |exp0003||||lossの割合1:1:1に|
 ||||||
