@@ -49,7 +49,7 @@
 |exp0002|CV|0.79004|0.711|CosAnealScheduler|
 ||||||
 |exp0003|0|0.78||lossのpseudo無し|
-|exp0003|1|||lossのpseudo無し|
+|exp0003|1|0.7642||lossのpseudo無し|
 |exp0003|2|||lossのpseudo無し|
 |exp0003|3|||lossのpseudo無し|
 |exp0003|4|||lossのpseudo無し|
