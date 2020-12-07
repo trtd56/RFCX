@@ -45,16 +45,16 @@
 |exp0002|2|0.7921|0.652|CosAnealScheduler|
 |exp0002|3|0.7942|0.650|CosAnealScheduler|
 |exp0002|4|0.8061|0.600|CosAnealScheduler|
-|exp0002|CV|0.79004|0.723|CosAnealScheduler|
-|exp0002|CV|0.79004|0.711|CosAnealScheduler|
+|exp0002|CV|0.79004|0.723|CosAnealScheduler before sigmoid|
+|exp0002|CV|0.79004|0.711|CosAnealScheduler after sigmoid|
 ||||||
 |exp0003|0|0.78||lossのpseudo無し|
 |exp0003|1|0.7642||lossのpseudo無し|
-|exp0003|2|||lossのpseudo無し|
-|exp0003|3|||lossのpseudo無し|
-|exp0003|4|||lossのpseudo無し|
-|exp0003|CV|||lossのpseudo無し|
-|exp0003|CV|||lossのpseudo無し|
+|exp0003|2|0.7742||lossのpseudo無し|
+|exp0003|3|0.7714||lossのpseudo無し|
+|exp0003|4|0.7714||lossのpseudo無し|
+|exp0003|CV|||lossのpseudo無し before sigmoid|
+|exp0003|CV|0.77224|0.698|lossのpseudo無し after sigmoid|
 ||||||
 |exp0004||||FreqMask|
 ||||||
@@ -65,4 +65,4 @@
 |exp0007||||fpデータの利用|
 ||||||
 
-(0.8061+0.7942+0.7921+0.7929+0.7649)/5
+(0.78+0.7642+0.7742+0.7714+0.7714)/5
