@@ -48,11 +48,11 @@
 |exp0002|CV|0.79004|0.723|CosAnealScheduler|
 |exp0002|CV|0.79004|0.711|CosAnealScheduler|
 ||||||
-|exp0003||||lossの割合1:1:1に|
+|exp0003||||lossのpseudo無し|
 ||||||
-|exp0004||||lossのpseudo無し|
+|exp0004||||FreqMask|
 ||||||
-|exp0005||||いろんなAugument|
+|exp0005||||gamma noise|
 ||||||
 |exp0006||||freq Attention|
 ||||||
