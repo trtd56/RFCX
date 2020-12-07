@@ -43,10 +43,10 @@
 |exp0002|0|0.7649|0.696|CosAnealScheduler|
 |exp0002|1|0.7929|0.626|CosAnealScheduler|
 |exp0002|2|0.7921|0.652|CosAnealScheduler|
-|exp0002|3|0.7942||CosAnealScheduler|
-|exp0002|4|||CosAnealScheduler|
-|exp0002|CV|||CosAnealScheduler|
-|exp0002|CV|||CosAnealScheduler|
+|exp0002|3|0.7942|0.650|CosAnealScheduler|
+|exp0002|4|0.8061|0.600|CosAnealScheduler|
+|exp0002|CV|0.79004|0.723|CosAnealScheduler|
+|exp0002|CV|0.79004|0.711|CosAnealScheduler|
 ||||||
 |exp0003||||lossの割合1:1:1に|
 ||||||
@@ -58,3 +58,5 @@
 ||||||
 |exp0007||||fpデータの利用|
 ||||||
+
+(0.8061+0.7942+0.7921+0.7929+0.7649)/5
