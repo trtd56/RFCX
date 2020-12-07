@@ -53,8 +53,8 @@
 |exp0003|2|0.7742||lossのpseudo無し|
 |exp0003|3|0.7714||lossのpseudo無し|
 |exp0003|4|0.7714||lossのpseudo無し|
-|exp0003|CV|||lossのpseudo無し before sigmoid|
-|exp0003|CV|0.77224|0.698|lossのpseudo無し after sigmoid|
+|exp0003|CV|0.77224|0.698|lossのpseudo無し before sigmoid|
+|exp0003|CV|||lossのpseudo無し after sigmoid|
 ||||||
 |exp0004||||FreqMask|
 ||||||
