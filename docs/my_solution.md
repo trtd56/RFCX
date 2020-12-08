@@ -54,16 +54,30 @@
 |exp0003|3|0.7714||lossのpseudo無し|
 |exp0003|4|0.7714||lossのpseudo無し|
 |exp0003|CV|0.77224|0.698|lossのpseudo無し before sigmoid|
-|exp0003|CV|0.77224||lossのpseudo無し after sigmoid|
+|exp0003|CV|0.77224|0.676|lossのpseudo無し after sigmoid|
 ||||||
-|exp0004||||FreqMask|
+|exp0004|0|0.7591||FreqMask|
+|exp0004|1|0.7836||FreqMask|
+|exp0004|2|0.7807||FreqMask|
+|exp0004|3|0.7811||FreqMask|
+|exp0004|4|0.7856||FreqMask|
+|exp0004|CV|0.77802|0.713|FreqMask before sigmoid|
+|exp0004|CV|0.77802||FreqMask after sigmoid|
 ||||||
-|exp0005||||gamma noise|
+|exp0005|0|0.7751||baseline(T4)|
+|exp0005|1|0.7796||baseline(T4)|
+|exp0005|2|0.7832||baseline(T4)|
+|exp0005|3|0.7762||baseline(T4)|
+|exp0005|4|||baseline(T4)|
+|exp0005|CV||0.692|baseline(T4) best score|
+|exp0005|CV||0.585|baseline(T4) best loss|
 ||||||
-|exp0006||||baseline(T4)|
+|exp0006||||gamma noise|
 ||||||
 |exp0007||||freq Attention|
 ||||||
 |exp0008||||fpデータの利用|
 ||||||
+
+(0.7811+0.7856+0.7807+0.7836+0.7591)/5
 
