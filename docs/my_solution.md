@@ -81,20 +81,22 @@
 |exp0006|CV|-||gamma noise best loss|
 ||||||
 |exp0007|0|||softmax→tanh|
-|exp0007|1|||softmax→tanh|
-|exp0007|2|||softmax→tanh|
-|exp0007|3|||softmax→tanh|
-|exp0007|4|||softmax→tanh|
-|exp0007|CV|||softmax→tanh best score|
-|exp0007|CV|-||softmax→tanh best loss|
 ||||||
-|exp0008||||pos_weight|
+|exp0008|0|||softmax→sigmoid|
+|exp0008|1|||softmax→sigmoid|
+|exp0008|2|||softmax→sigmoid|
+|exp0008|3|||softmax→sigmoid|
+|exp0008|4|||softmax→sigmoid|
+|exp0008|CV|||softmax→sigmoid best score|
+|exp0008|CV|-||softmax→sigmoid best loss|
 ||||||
-|exp0009||||random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
+|exp0009||||pos_weight|
 ||||||
-|exp0010||||step LR Scheduler|
+|exp0010||||random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
 ||||||
-|exp0011||||fpデータの利用|
+|exp0011||||step LR Scheduler|
 ||||||
-|exp0012|||||
+|exp0012||||fpデータの利用|
+||||||
+|exp0013|||||
 ||||||
