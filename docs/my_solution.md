@@ -88,9 +88,9 @@
 |exp0007|CV|||softmax→tanh best score|
 |exp0007|CV|-||softmax→tanh best loss|
 ||||||
-|exp0008||||random brightness|
+|exp0008||||pos_weight|
 ||||||
-|exp0009||||pos_weight|
+|exp0009||||random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
 ||||||
 |exp0010||||step LR Scheduler|
 ||||||
