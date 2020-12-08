@@ -82,13 +82,7 @@
 ||||||
 |exp0007|0|not good||softmax→tanh|
 ||||||
-|exp0008|0|||softmax→sigmoid|
-|exp0008|1|||softmax→sigmoid|
-|exp0008|2|||softmax→sigmoid|
-|exp0008|3|||softmax→sigmoid|
-|exp0008|4|||softmax→sigmoid|
-|exp0008|CV|||softmax→sigmoid best score|
-|exp0008|CV|-||softmax→sigmoid best loss|
+|exp0008|0|not good||softmax→sigmoid|
 ||||||
 |exp0009||||pos_weight|
 ||||||
