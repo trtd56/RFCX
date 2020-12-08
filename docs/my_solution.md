@@ -80,7 +80,7 @@
 |exp0006|CV|0.7869||gamma noise best score|
 |exp0006|CV|-||gamma noise best loss|
 ||||||
-|exp0007|0|||softmax→tanh|
+|exp0007|0|not good||softmax→tanh|
 ||||||
 |exp0008|0|||softmax→sigmoid|
 |exp0008|1|||softmax→sigmoid|
