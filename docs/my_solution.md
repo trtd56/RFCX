@@ -73,22 +73,29 @@
 |exp0005|CV|-|0.585|baseline(T4) best loss|
 ||||||
 |exp0006|0|0.7841||gamma noise|
-|exp0006|1|||gamma noise|
-|exp0006|2|||gamma noise|
-|exp0006|3|||gamma noise|
-|exp0006|4|||gamma noise|
-|exp0006|CV|||gamma noise best score|
+|exp0006|1|0.789||gamma noise|
+|exp0006|2|0.788||gamma noise|
+|exp0006|3|0.7796||gamma noise|
+|exp0006|4|0.7941||gamma noise|
+|exp0006|CV|0.7869||gamma noise best score|
 |exp0006|CV|-||gamma noise best loss|
 ||||||
-|exp0007||||freq Attention|
-||||||
-|exp0008||||pos_weight|
+|exp0007|0|||softmax→tanh|
+|exp0007|1|||softmax→tanh|
+|exp0007|2|||softmax→tanh|
+|exp0007|3|||softmax→tanh|
+|exp0007|4|||softmax→tanh|
+|exp0007|CV|||softmax→tanh best score|
+|exp0007|CV|-||softmax→tanh best loss|
 ||||||
 |exp0009||||random brightness|
+||||||
+|exp0008||||pos_weight|
+
 ||||||
 |exp0010||||step LR Scheduler|
 ||||||
 |exp0011||||fpデータの利用|
 ||||||
-|exp0012||||softmax→tanh|
+|exp0012|||||
 ||||||
