@@ -70,7 +70,7 @@
 |exp0005|3|0.7762||baseline(T4)|
 |exp0005|4|0.7818||baseline(T4)|
 |exp0005|CV|0.7792|0.692|baseline(T4) best score|
-|exp0005|CV|0.7792|0.585|baseline(T4) best loss|
+|exp0005|CV|-|0.585|baseline(T4) best loss|
 ||||||
 |exp0006|0|||gamma noise|
 |exp0006|1|||gamma noise|
@@ -78,7 +78,7 @@
 |exp0006|3|||gamma noise|
 |exp0006|4|||gamma noise|
 |exp0006|CV|||gamma noise best score|
-|exp0006|CV|||gamma noise best loss|
+|exp0006|CV|-||gamma noise best loss|
 ||||||
 |exp0007||||freq Attention|
 ||||||
