@@ -62,7 +62,7 @@
 |exp0004|3|0.7811||FreqMask|
 |exp0004|4|0.7856||FreqMask|
 |exp0004|CV|0.77802|0.713|FreqMask before sigmoid|
-|exp0004|CV|0.77802||FreqMask after sigmoid|
+|exp0004|CV|0.77802|0.710|FreqMask after sigmoid|
 ||||||
 |exp0005|0|0.7751||baseline(T4)|
 |exp0005|1|0.7796||baseline(T4)|
