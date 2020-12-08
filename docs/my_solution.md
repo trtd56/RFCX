@@ -82,7 +82,12 @@
 ||||||
 |exp0007||||freq Attention|
 ||||||
-|exp0008||||fpデータの利用|
+|exp0008||||pos_weight|
 ||||||
-
+|exp0009||||random brightness|
+||||||
+|exp0010||||step LR Scheduler|
+||||||
+|exp0011||||fpデータの利用|
+||||||
 
