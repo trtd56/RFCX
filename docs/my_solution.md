@@ -72,7 +72,7 @@
 |exp0005|CV|0.7792|0.692|baseline(T4) best score|
 |exp0005|CV|-|0.585|baseline(T4) best loss|
 ||||||
-|exp0006|0|||gamma noise|
+|exp0006|0|0.7841||gamma noise|
 |exp0006|1|||gamma noise|
 |exp0006|2|||gamma noise|
 |exp0006|3|||gamma noise|
