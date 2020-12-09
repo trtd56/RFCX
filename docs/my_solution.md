@@ -30,67 +30,18 @@
 
 ## 実験
 
-|実験名|Fold|local score|LB|memo|
-|--|--|--|--|--|
-|exp0001|0|0.7715|0.695|baseline|
-|exp0001|1|0.761|0.623|baseline|
-|exp0001|2|0.7775|0.596|baseline|
-|exp0001|3|0.7869|0.625|baseline|
-|exp0001|4|0.7862|0.627|baseline|
-|exp0001|CV|0.77662|0.734|baseline before sigmoid|
-|exp0001|CV|0.77662|0.711|baseline after sigmoid|
-||||||
-|exp0002|0|0.7649|0.696|CosAnealScheduler|
-|exp0002|1|0.7929|0.626|CosAnealScheduler|
-|exp0002|2|0.7921|0.652|CosAnealScheduler|
-|exp0002|3|0.7942|0.650|CosAnealScheduler|
-|exp0002|4|0.8061|0.600|CosAnealScheduler|
-|exp0002|CV|0.79004|0.723|CosAnealScheduler before sigmoid|
-|exp0002|CV|0.79004|0.711|CosAnealScheduler after sigmoid|
-||||||
-|exp0003|0|0.78||lossのpseudo無し|
-|exp0003|1|0.7642||lossのpseudo無し|
-|exp0003|2|0.7742||lossのpseudo無し|
-|exp0003|3|0.7714||lossのpseudo無し|
-|exp0003|4|0.7714||lossのpseudo無し|
-|exp0003|CV|0.77224|0.698|lossのpseudo無し before sigmoid|
-|exp0003|CV|0.77224|0.676|lossのpseudo無し after sigmoid|
-||||||
-|exp0004|0|0.7591||FreqMask|
-|exp0004|1|0.7836||FreqMask|
-|exp0004|2|0.7807||FreqMask|
-|exp0004|3|0.7811||FreqMask|
-|exp0004|4|0.7856||FreqMask|
-|exp0004|CV|0.77802|0.713|FreqMask before sigmoid|
-|exp0004|CV|0.77802|0.710|FreqMask after sigmoid|
-||||||
-|exp0005|0|0.7751||baseline(T4)|
-|exp0005|1|0.7796||baseline(T4)|
-|exp0005|2|0.7832||baseline(T4)|
-|exp0005|3|0.7762||baseline(T4)|
-|exp0005|4|0.7818||baseline(T4)|
-|exp0005|CV|0.7792|0.692|baseline(T4) best score|
-|exp0005|CV|-|0.585|baseline(T4) best loss|
-||||||
-|exp0006|0|0.7841||gamma noise|
-|exp0006|1|0.789||gamma noise|
-|exp0006|2|0.788||gamma noise|
-|exp0006|3|0.7796||gamma noise|
-|exp0006|4|0.7941||gamma noise|
-|exp0006|CV|0.7869|0.710|gamma noise best score|
-|exp0006|CV|-|0.628|gamma noise best loss|
-||||||
-|exp0007|0|not good||softmax→tanh|
-||||||
-|exp0008|0|not good||softmax→sigmoid|
-||||||
-|exp0009||||pos_weight|
-||||||
-|exp0010||||random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
-||||||
-|exp0011||||step LR Scheduler|
-||||||
-|exp0012||||fpデータの利用|
-||||||
-|exp0013|||||
-||||||
+|実験名|CV|LB|memo|
+|--|--|--|--|
+|exp0001|0.77662|0.734|baseline P100|
+|exp0002|0.79004|0.723|CosAnealScheduler|
+|exp0003|0.77224|0.698|lossのpseudo無し|
+|exp0004|0.77802|0.713|FreqMask|
+|exp0005|0.7792|0.692|baseline(T4)|
+|exp0006|0.7869|0.710|gamma noise|
+|exp0007|not good||softmax→tanh|
+|exp0008|not good||softmax→sigmoid|
+|exp0009|0.7879|0.731|pos_weight|
+|exp0010|||random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
+|exp0011|||step LR Scheduler|
+|exp0012|||fpデータの利用|
+|exp0013||||
