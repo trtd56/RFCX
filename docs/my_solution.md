@@ -44,5 +44,6 @@
 |exp0010|0.7813|0.729|random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
 |exp0011|||gamma before norm|
 |exp0012|||step LR Scheduler|
-|exp0013|||fpデータの利用|
-|exp0014||||
+|exp0013|||Augument全部のせ+pos weigth+scheduler|
+|exp0014|||fpデータの利用|
+|exp0015||||
