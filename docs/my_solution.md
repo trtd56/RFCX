@@ -77,8 +77,8 @@
 |exp0006|2|0.788||gamma noise|
 |exp0006|3|0.7796||gamma noise|
 |exp0006|4|0.7941||gamma noise|
-|exp0006|CV|0.7869||gamma noise best score|
-|exp0006|CV|-||gamma noise best loss|
+|exp0006|CV|0.7869|0.710|gamma noise best score|
+|exp0006|CV|-|0.628|gamma noise best loss|
 ||||||
 |exp0007|0|not good||softmax→tanh|
 ||||||
