@@ -42,6 +42,7 @@
 |exp0008|not good||softmax→sigmoid|
 |exp0009|0.7879|0.731|pos_weight|
 |exp0010|||random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
-|exp0011|||step LR Scheduler|
-|exp0012|||fpデータの利用|
-|exp0013||||
+|exp0011|||gamma before norm|
+|exp0012|||step LR Scheduler|
+|exp0013|||fpデータの利用|
+|exp0014||||
