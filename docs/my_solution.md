@@ -7,6 +7,8 @@
 ## やりたいこと
 - [ ] Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
+- [ ] TTA
+- [ ] Pseudo Labeling
 
 ## Dataset
 ### songtype_idについて
