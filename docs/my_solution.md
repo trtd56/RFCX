@@ -50,3 +50,6 @@
 |exp0013|0.8223|0.769|Augument全部のせ+pos weigth+CosAnealScheduler|
 |exp0014|||fpデータの利用|
 |exp0015||||
+
+#### best loss
+- exp0013: loss=0.694, LB=0.677
