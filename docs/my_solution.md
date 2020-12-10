@@ -43,7 +43,7 @@
 |exp0009|0.7879|0.731|pos_weight|
 |exp0010|0.7813|0.729|random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
 |exp0011|0.7875|0.714|gamma before norm|
-|exp0012|||step LR Scheduler|
-|exp0013|||Augument全部のせ+pos weigth+best scheduler|
+|exp0012|0.7859|0.708|step LR Scheduler|
+|exp0013|||Augument全部のせ+pos weigth+CosAnealScheduler|
 |exp0014|||fpデータの利用|
 |exp0015||||
