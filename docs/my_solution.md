@@ -9,6 +9,7 @@
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
 - [ ] TTA
 - [ ] Pseudo Labeling
+- [ ] Lable Smoothing
 
 ## Dataset
 ### songtype_idについて
