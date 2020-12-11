@@ -9,7 +9,6 @@
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
 - [ ] TTA
 - [ ] Pseudo Labeling
-- [ ] Lable Smoothing
 
 ## Dataset
 ### songtype_idについて
@@ -49,7 +48,10 @@
 |exp0012|0.7859|0.708|step LR Scheduler|
 |exp0013|0.8223|0.769|Augument全部のせ+pos weigth+CosAnealScheduler|
 |exp0014|||fpデータの利用|
-|exp0015||||
+|exp0015|||mixupのOFF|
+|exp0016|||mixupのalpha=0.2|
+|exp0017|||Focal Loss|
+|exp0018|||Label Smoothing|
 
 #### best loss
 - exp0013: loss=0.694, LB=0.677
