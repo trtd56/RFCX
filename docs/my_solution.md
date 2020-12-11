@@ -49,7 +49,7 @@
 |exp0013|0.8223|0.769|Augument全部のせ+pos weigth+CosAnealScheduler|
 |exp0014|not good||fpデータの学習(FPが学習できるか)|
 |exp0015|0.803|0.762|mixupのOFF|
-|exp0016|||softmax+tanh|
+|exp0016|0.7955|0.730|softmax+tanh|
 |exp0017|||AdamW|
 |exp0018|||framewise_outputのしきい値をへらす|
 |exp0019|||Focal Loss|
