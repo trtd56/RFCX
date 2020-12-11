@@ -26,7 +26,7 @@
 - [x] [COLA: 音声の汎用pre-trainモデル](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197805)
 - [x] [アライさんの音声のData AugumentationのNotebook](https://www.kaggle.com/hidehisaarai1213/rfcx-audio-data-augmentation-japanese-english)
 - [x] [pytorchの推論](https://www.kaggle.com/kneroma/inference-resnest-rfcx-audio-detection)
-- [ ] [鳥コンペの上位ソリューション](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197873)
+- [x] [鳥コンペの上位ソリューション](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197873)
 - [x] [評価スコア計算のPytorch実装](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/198418)
 - [x] [切り取ったデータセット](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/199025)
 
@@ -47,11 +47,17 @@
 |exp0011|0.7875|0.714|gamma before norm|
 |exp0012|0.7859|0.708|step LR Scheduler|
 |exp0013|0.8223|0.769|Augument全部のせ+pos weigth+CosAnealScheduler|
-|exp0014|||fpデータの利用|
+|exp0014|not good||fpデータの学習(FPが学習できるか)|
 |exp0015|||mixupのOFF|
-|exp0016|||mixupのalpha=0.2|
-|exp0017|||Focal Loss|
-|exp0018|||Label Smoothing|
+|exp0016|||softmax+tanh|
+|exp0017|||AdamW|
+|exp0018|||framewise_outputのしきい値をへらす|
+|exp0019|||Focal Loss|
+|exp0020|||att poolとmax poolのlossの和|
+|exp0021|||Label Smoothing|
+|exp0022|||mixup last layer|
+|exp0023|||mixupのalpha=0.2|
+|exp0024|||fpデータの学習(学習データにのみ追加)|
 
 #### best loss
 - exp0013: loss=0.694, LB=0.677
