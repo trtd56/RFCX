@@ -4,6 +4,10 @@
 
 # memo
 
+## 課題
+- testとlocalが違う
+- trainにノイズが多い
+
 ## やりたいこと
 - [ ] Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
