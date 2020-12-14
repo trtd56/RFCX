@@ -54,11 +54,11 @@
 |exp0014|not good||fpデータの学習(FPが学習できるか)|
 |exp0015|0.803|0.762|mixupのOFF|
 |exp0016|0.7955|0.730|softmax+tanh|
-|exp0017|||AdamW|
-|exp0018|||framewise_outputのしきい値をへらす|
-|exp0019|||Focal Loss|
-|exp0020|||att poolとmax poolのlossの和|
-|exp0021|||Label Smoothing|
+|exp0017|0.8136|0.762|AdamW|
+|exp0018|||Focal Loss|
+|exp0019|||framewise_outputのしきい値をへらす|
+|exp0020|||Label Smoothing|
+|exp0021|||att poolとmax poolのlossの和|
 |exp0022|||mixup last layer|
 |exp0023|||mixupのalpha=0.2|
 |exp0024|||fpデータの学習(学習データにのみ追加)|
