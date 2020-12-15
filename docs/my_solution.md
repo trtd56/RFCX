@@ -42,6 +42,7 @@
 |exp0002|0.79004|0.723|CosAnealScheduler|
 |exp0003|0.77224|0.698|lossのpseudo無し|
 |exp0004|0.77802|0.713|FreqMask|
+|||||
 |exp0005|0.7792|0.692|baseline(T4)|
 |exp0006|0.7869|0.710|gamma noise|
 |exp0007|not good||softmax→tanh|
@@ -50,6 +51,7 @@
 |exp0010|0.7813|0.729|random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
 |exp0011|0.7875|0.714|gamma before norm|
 |exp0012|0.7859|0.708|step LR Scheduler|
+|||||
 |exp0013|0.8223|0.769|Augument全部のせ+pos weigth+CosAnealScheduler|
 |exp0014|not good||fpデータの学習(FPが学習できるか)|
 |exp0015|0.803|0.762|mixupのOFF|
@@ -57,11 +59,14 @@
 |exp0017|0.8136|0.762|AdamW|
 |exp0018|0.8171|0.761|Focal Loss|
 |exp0019|0.8144|0.780|framewise_outputのしきい値をへらす|
-|exp0020|||Label Smoothing|
-|exp0021|||att poolとmax poolのlossの和|
-|exp0022|||mixup last layer|
+|exp0020|not good||att poolとmax poolのlossの和|
+|||||
+|exp0021|0.8143|0.828|cutしてdetection|
+|exp0022|||framewise_outputのしきい値0.3|
 |exp0023|||mixupのalpha=0.2|
-|exp0024|||cutしてdetection|
+|exp0022|||mixup last layer|
+|exp0023|||Label Smoothing|
+|||||
 |exp0025|||fpデータの学習(学習データにのみ追加)|
 
 #### best loss
