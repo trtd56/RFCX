@@ -4,9 +4,15 @@
 
 # memo
 
+## 課題
+- testとlocalが違う
+- trainにノイズが多い
+
 ## やりたいこと
 - [ ] Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
+- [ ] TTA
+- [ ] Pseudo Labeling
 
 ## Dataset
 ### songtype_idについて
@@ -24,46 +30,39 @@
 - [x] [COLA: 音声の汎用pre-trainモデル](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197805)
 - [x] [アライさんの音声のData AugumentationのNotebook](https://www.kaggle.com/hidehisaarai1213/rfcx-audio-data-augmentation-japanese-english)
 - [x] [pytorchの推論](https://www.kaggle.com/kneroma/inference-resnest-rfcx-audio-detection)
-- [ ] [鳥コンペの上位ソリューション](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197873)
+- [x] [鳥コンペの上位ソリューション](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197873)
 - [x] [評価スコア計算のPytorch実装](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/198418)
 - [x] [切り取ったデータセット](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/199025)
 
 ## 実験
 
-|実験名|Fold|local score|LB|memo|
-|--|--|--|--|--|
-|exp0001|0|0.7715|0.695|baseline|
-|exp0001|1|0.761|0.623|baseline|
-|exp0001|2|0.7775|0.596|baseline|
-|exp0001|3|0.7869|0.625|baseline|
-|exp0001|4|0.7862|0.627|baseline|
-|exp0001|CV|0.77662|0.734|baseline before sigmoid|
-|exp0001|CV|0.77662|0.711|baseline after sigmoid|
-||||||
-|exp0002|0|0.7649|0.696|CosAnealScheduler|
-|exp0002|1|0.7929|0.626|CosAnealScheduler|
-|exp0002|2|0.7921|0.652|CosAnealScheduler|
-|exp0002|3|0.7942|0.650|CosAnealScheduler|
-|exp0002|4|0.8061|0.600|CosAnealScheduler|
-|exp0002|CV|0.79004|0.723|CosAnealScheduler before sigmoid|
-|exp0002|CV|0.79004|0.711|CosAnealScheduler after sigmoid|
-||||||
-|exp0003|0|0.78||lossのpseudo無し|
-|exp0003|1|0.7642||lossのpseudo無し|
-|exp0003|2|0.7742||lossのpseudo無し|
-|exp0003|3|0.7714||lossのpseudo無し|
-|exp0003|4|0.7714||lossのpseudo無し|
-|exp0003|CV|0.77224|0.698|lossのpseudo無し before sigmoid|
-|exp0003|CV|0.77224||lossのpseudo無し after sigmoid|
-||||||
-|exp0004||||FreqMask|
-||||||
-|exp0005||||gamma noise|
-||||||
-|exp0006||||baseline(T4)|
-||||||
-|exp0007||||freq Attention|
-||||||
-|exp0008||||fpデータの利用|
-||||||
+|実験名|CV|LB|memo|
+|--|--|--|--|
+|exp0001|0.77662|0.734|baseline P100|
+|exp0002|0.79004|0.723|CosAnealScheduler|
+|exp0003|0.77224|0.698|lossのpseudo無し|
+|exp0004|0.77802|0.713|FreqMask|
+|exp0005|0.7792|0.692|baseline(T4)|
+|exp0006|0.7869|0.710|gamma noise|
+|exp0007|not good||softmax→tanh|
+|exp0008|not good||softmax→sigmoid|
+|exp0009|0.7879|0.731|pos_weight|
+|exp0010|0.7813|0.729|random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
+|exp0011|0.7875|0.714|gamma before norm|
+|exp0012|0.7859|0.708|step LR Scheduler|
+|exp0013|0.8223|0.769|Augument全部のせ+pos weigth+CosAnealScheduler|
+|exp0014|not good||fpデータの学習(FPが学習できるか)|
+|exp0015|0.803|0.762|mixupのOFF|
+|exp0016|0.7955|0.730|softmax+tanh|
+|exp0017|0.8136|0.762|AdamW|
+|exp0018|0.8171|0.761|Focal Loss|
+|exp0019|0.8144|0.780|framewise_outputのしきい値をへらす|
+|exp0020|||Label Smoothing|
+|exp0021|||att poolとmax poolのlossの和|
+|exp0022|||mixup last layer|
+|exp0023|||mixupのalpha=0.2|
+|exp0024|||cutしてdetection|
+|exp0025|||fpデータの学習(学習データにのみ追加)|
 
+#### best loss
+- exp0013: loss=0.694, LB=0.677
