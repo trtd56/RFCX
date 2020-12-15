@@ -61,7 +61,8 @@
 |exp0021|||att poolとmax poolのlossの和|
 |exp0022|||mixup last layer|
 |exp0023|||mixupのalpha=0.2|
-|exp0024|||fpデータの学習(学習データにのみ追加)|
+|exp0024|||cutしてdetection|
+|exp0025|||fpデータの学習(学習データにのみ追加)|
 
 #### best loss
 - exp0013: loss=0.694, LB=0.677
