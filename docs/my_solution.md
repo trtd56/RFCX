@@ -55,8 +55,8 @@
 |exp0015|0.803|0.762|mixupのOFF|
 |exp0016|0.7955|0.730|softmax+tanh|
 |exp0017|0.8136|0.762|AdamW|
-|exp0018|||Focal Loss|
-|exp0019|||framewise_outputのしきい値をへらす|
+|exp0018|0.8171|0.761|Focal Loss|
+|exp0019|0.8144|0.780|framewise_outputのしきい値をへらす|
 |exp0020|||Label Smoothing|
 |exp0021|||att poolとmax poolのlossの和|
 |exp0022|||mixup last layer|
