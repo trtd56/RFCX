@@ -66,9 +66,9 @@
 |exp0024|0.8159|0.804|mixup last layer|
 |exp0025|0.8095|0.814|window size 256|
 |exp0025|0.8095|0.799|window size 256 max|
-|exp0025|||mix 256, 512|
-|exp0026|||lr 3e-4|
-|exp0027|||Label Smoothing|
+|exp0025|X||mix 256, 512|
+|exp0026|0.7935||lr 3e-4|
+|exp0027|0.8089||lr 3e-4, Label Smoothing|
 |exp0028|||att poolとmax pool, 1:0.5|
 |exp0029|||low pass filtering|
 |exp0030|||RandomCrop|
