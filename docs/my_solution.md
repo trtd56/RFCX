@@ -69,7 +69,8 @@
 |exp0024|||lr 3e-4|
 |exp0025|||Densenet|
 |exp0026|||window size 256|
-|exp0027||||
+|exp0027|||freeze->unfreeze|
+|exp0027|||warmup|
 |exp0025|||fpデータの学習(学習データにのみ追加)|
 
 #### best loss
