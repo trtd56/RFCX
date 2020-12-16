@@ -60,14 +60,12 @@
 |exp0020|not good|X|att poolとmax poolのlossの和|
 |||||
 |exp0021|0.8143|0.828|cutしてdetection|
-|exp0021|0.8143||cutしてdetection max|
+|exp0021|0.8143|0.814|cutしてdetection max|
 |exp0022|0.8154|0.816|framewise_outputのしきい値0.3|
-|exp0022|0.8154||framewise_outputのしきい値0.3 max|
 |exp0023|0.8106|0.805|mixupのalpha=0.2|
 |exp0024|0.8159|0.804|mixup last layer|
-|exp0024|0.8159||mixup last layer max|
-|exp0025|||window size 256|
-|exp0025|||window size 256 max|
+|exp0025|0.8095|0.814|window size 256|
+|exp0025|0.8095|0.799|window size 256 max|
 |exp0025|||mix 256, 512|
 |exp0026|||lr 3e-4|
 |exp0027|||Label Smoothing|
