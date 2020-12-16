@@ -71,9 +71,11 @@
 |exp0026|||lr 3e-4|
 |exp0027|||Label Smoothing|
 |exp0028|||att poolとmax pool, 1:0.5|
-|exp0029|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
-|exp0030|||freeze->unfreeze|
-|exp0031|||warmup|
+|exp0029|||low pass filtering|
+|exp0030|||RandomCrop|
+|exp0031|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
+|exp0032|||freeze->unfreeze|
+|exp0033|||warmup|
 |||||
 |exp0025|||fpデータの学習(学習データにのみ追加)|
 |||||
