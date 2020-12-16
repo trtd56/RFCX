@@ -11,8 +11,6 @@
 ## やりたいこと
 - [ ] Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
-- [ ] TTA
-- [ ] Pseudo Labeling
 
 ## Dataset
 ### songtype_idについて
@@ -71,7 +69,10 @@
 |exp0026|||window size 256|
 |exp0027|||freeze->unfreeze|
 |exp0027|||warmup|
+|exp0027|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
 |exp0025|||fpデータの学習(学習データにのみ追加)|
+|exp0025|||Pseudo labeling|
+|exp0025|||TTA|
 
 #### best loss
 - exp0013: loss=0.694, LB=0.677
