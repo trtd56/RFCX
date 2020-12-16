@@ -43,15 +43,15 @@
 |||||
 |exp0005|0.7792|0.692|baseline(T4)|
 |exp0006|0.7869|0.710|gamma noise|
-|exp0007|not good||softmax→tanh|
-|exp0008|not good||softmax→sigmoid|
+|exp0007|not good|X|softmax→tanh|
+|exp0008|not good|X|softmax→sigmoid|
 |exp0009|0.7879|0.731|pos_weight|
 |exp0010|0.7813|0.729|random brightness→[albumentations](https://github.com/albumentations-team/albumentations)|
 |exp0011|0.7875|0.714|gamma before norm|
 |exp0012|0.7859|0.708|step LR Scheduler|
 |||||
 |exp0013|0.8223|0.769|Augument全部のせ+pos weigth+CosAnealScheduler|
-|exp0014|not good||fpデータの学習(FPが学習できるか)|
+|exp0014|not good|X|fpデータの学習(FPが学習できるか)|
 |exp0015|0.803|0.762|mixupのOFF|
 |exp0016|0.7955|0.730|softmax+tanh|
 |exp0017|0.8136|0.762|AdamW|
