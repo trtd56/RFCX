@@ -60,17 +60,23 @@
 |exp0020|not good||att poolとmax poolのlossの和|
 |||||
 |exp0021|0.8143|0.828|cutしてdetection|
+|exp0021|0.8143||cutしてdetection max|
 |exp0022|0.8154|0.816|framewise_outputのしきい値0.3|
+|exp0022|0.8154||framewise_outputのしきい値0.3 max|
 |exp0023|0.8106|0.805|mixupのalpha=0.2|
 |exp0024|0.8159|0.804|mixup last layer|
+|exp0024|0.8159||mixup last layer max|
 |exp0025|||window size 256|
-|exp0023|||Label Smoothing|
-|exp0024|||lr 3e-4|
-|exp0025|||Densenet|
+|exp0025|||window size 256 max|
+|exp0026|||lr 3e-4|
+|exp0027|||Label Smoothing|
+|exp0027|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
 |exp0027|||freeze->unfreeze|
 |exp0027|||warmup|
-|exp0027|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
+|||||
 |exp0025|||fpデータの学習(学習データにのみ追加)|
+|||||
+|exp0025|||Densenet|
 |exp0025|||Pseudo labeling|
 |exp0025|||TTA|
 
