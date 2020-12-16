@@ -57,7 +57,7 @@
 |exp0017|0.8136|0.762|AdamW|
 |exp0018|0.8171|0.761|Focal Loss|
 |exp0019|0.8144|0.780|framewise_outputのしきい値をへらす|
-|exp0020|not good||att poolとmax poolのlossの和|
+|exp0020|not good|X|att poolとmax poolのlossの和|
 |||||
 |exp0021|0.8143|0.828|cutしてdetection|
 |exp0021|0.8143||cutしてdetection max|
