@@ -67,6 +67,7 @@
 |exp0022|||mixup last layer|
 |exp0023|||Label Smoothing|
 |exp0024|||lr 3e-4|
+|exp0025|||Densenet|
 |||||
 |exp0025|||fpデータの学習(学習データにのみ追加)|
 
