@@ -68,6 +68,7 @@
 |exp0024|0.8159||mixup last layer max|
 |exp0025|||window size 256|
 |exp0025|||window size 256 max|
+|exp0025|||mix 256, 512|
 |exp0026|||lr 3e-4|
 |exp0027|||Label Smoothing|
 |exp0028|||att poolとmax pool, 1:0.5|
