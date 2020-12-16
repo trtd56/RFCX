@@ -62,11 +62,11 @@
 |exp0021|0.8143|0.828|cutしてdetection|
 |exp0022|0.8154|0.816|framewise_outputのしきい値0.3|
 |exp0023|0.8106|0.805|mixupのalpha=0.2|
-|exp0022|||mixup last layer|
+|exp0024|0.8159|0.804|mixup last layer|
+|exp0025|||window size 256|
 |exp0023|||Label Smoothing|
 |exp0024|||lr 3e-4|
 |exp0025|||Densenet|
-|exp0026|||window size 256|
 |exp0027|||freeze->unfreeze|
 |exp0027|||warmup|
 |exp0027|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
