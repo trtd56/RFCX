@@ -74,6 +74,7 @@
 |exp0030|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
 |exp0031|||low pass filtering|
 |exp0032|||RandomCrop|
+|exp0032|||AdamW weight_decay 0.01|
 |exp0033|||freeze->unfreeze|
 |exp0034|||warmup|
 |||||
