@@ -70,9 +70,8 @@
 |exp0026|0.7935|0.793|lr 3e-4|
 |exp0027|0.8089|0.772|lr 3e-4, Label Smoothing|
 |exp0028|0.833|0.824|att poolとmax pool, 1:0.5|
-|exp0029|||att poolとmax pool, 1:1|
-|exp0029|||att poolとmax pool + mixup last layer + framewise_outputのしきい値0.3|
-|exp0030|||AdamW weight_decay 0.01|
+|exp0029|0.8308|0.813|att poolとmax pool, 1:1|
+|exp0030|||att poolとmax pool + mixup last layer + framewise_outputのしきい値0.3|
 |exp0031|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
 |exp0032|||low pass filtering|
 |exp0033|||RandomCrop|
