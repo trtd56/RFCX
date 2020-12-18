@@ -75,7 +75,7 @@
 |exp0031|0.8332|0.803|att poolとmax pool + pos weight loss|
 |exp0032|0.8293|0.785|att poolとmax pool + pos weight loss + mixup last layer|
 |exp0033|0.792|0.807|low pass filtering|
-|exp0034|||fpデータの学習(学習データにのみ追加)|
+|exp0034|0.8259|0.801|fpデータの学習(学習データにのみ追加)|
 |exp0035|||fpデータの学習(学習データにのみ追加), att poolとmax pool + pos weight loss|
 |exp0036|||fpデータの学習(学習データにのみ追加), att poolとmax pool + pos weight loss + framewise_outputのしきい値0.3|
 |exp0037|||fpデータのpseudo|
