@@ -76,10 +76,12 @@
 |exp0032|0.8293|0.785|att poolとmax pool + pos weight loss + mixup last layer|
 |exp0033|0.792|0.807|low pass filtering|
 |exp0034|0.8259|0.801|fpデータの学習(学習データにのみ追加)|
+|||||
 |exp0035|0.839|0.826|fpデータの学習(学習データにのみ追加), att poolとmax pool + pos weight loss|
-|exp0036|0.8363|0.805|fpデータの学習(学習データにのみ追加), att poolとmax pool + pos weight loss + framewise_outputのしきい値0.3|
-|exp0037|||fpデータの学習(学習データにのみ追加), att poolとmax pool + pos weight loss + framewise_outputのしきい値0.7|
+|exp0036|0.8363|0.805|framewise_outputのしきい値0.3|
+|exp0037|||framewise_outputのしきい値0.7|
 |exp0038|||メインloss 0.5|
+|exp0038|||Label Smoothing|
 |exp0039|||fpデータのpseudo|
 |||||
 |exp0031|||ランダムにlossを削除([鳥コンペ1st](https://www.kaggle.com/c/birdsong-recognition/discussion/183208))|
