@@ -79,16 +79,16 @@
 |||||
 |exp0035|0.839|0.826|fpデータの学習(学習データにのみ追加), att poolとmax pool + pos weight loss|
 |exp0036|0.8363|0.805|framewise_outputのしきい値0.3|
-|exp0037|0.8399|0.831|framewise_outputのしきい値0.7|
+|||||
+|exp0036|0.8399|0.831|framewise_outputのしきい値0.7|
 |exp0037|0.8358|0.815|メインloss 0.5|
 |exp0038|0.8358|0.783|Label Smoothing|
-|exp0031|||positiveのlossを削除|
-|exp0031|||with last mixup|
+|exp0039|0.8377|0.806|positiveのlossを削除|
+|exp0040|||with last mixup|
+|exp0041|||RandomCrop|
 |||||
 |exp0039|||fpデータのpseudo|
-|
 |||||
-|exp0033|||RandomCrop|
 |exp0033|||freeze->unfreeze|
 |exp0034|||warmup|
 |||||
