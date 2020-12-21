@@ -84,7 +84,7 @@
 |exp0037|0.8358|0.815|メインloss 0.5|
 |exp0038|0.8358|0.783|Label Smoothing|
 |exp0039|0.8377|0.806|positiveのlossを削除|
-|exp0040|||with last mixup|
+|exp0040|0.8391|0.805|with last mixup|
 |exp0041|||RandomCrop|
 |||||
 |exp0039|||fpデータのpseudo|
