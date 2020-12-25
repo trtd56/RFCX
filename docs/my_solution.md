@@ -92,7 +92,9 @@
 |exp0044|0.8315|0.830|fix imprement|
 |exp0045|0.8286|0.803|Hz pred loss|
 |exp0046|0.828|0.811|fix mixup|
-|exp0047|||pseudo 0.5|
+|exp0047|0.8324|0.821|pseudo 0.5|
+|exp0048|||nega label fix|
+|exp0048|||メインをFocal loss|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
