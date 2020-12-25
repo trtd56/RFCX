@@ -85,12 +85,18 @@
 |exp0038|0.8358|0.783|Label Smoothing|
 |exp0039|0.8377|0.806|positiveのlossを削除|
 |exp0040|0.8391|0.805|with last mixup|
-|exp0041|||RandomCrop|
+|exp0041|not good|X|RandomCrop|
+|exp0042|0.8287|0.837|segmentwise_output|
+|exp0043|0.8337|0.829|xa * xb|
+|||||
+|exp0044|0.8315|0.830|fix imprement|
+|exp0045|0.8286|0.803|Hz pred loss|
+|exp0046|0.828|0.811|fix mixup|
+|exp0047|||pseudo 0.5|
+|||||
+|exp0045|||OOF noisy label対策|
 |||||
 |exp0039|||fpデータのpseudo|
-|||||
-|exp0033|||freeze->unfreeze|
-|exp0034|||warmup|
 |||||
 |exp0025|||Densenet|
 |exp0025|||Pseudo labeling|
