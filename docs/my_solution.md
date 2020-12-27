@@ -93,12 +93,21 @@
 |exp0045|0.8286|0.803|Hz pred loss|
 |exp0046|0.828|0.811|fix mixup|
 |exp0047|0.8324|0.821|pseudo 0.5|
-|exp0048|||nega label fix|
-|exp0048|||メインをFocal loss|
+|||||
+|exp0048|0.8304|0.799|nega label fix|
+|exp0049|0.8339|0.791|メインをFocal loss|
+|exp0049|0.8285|0.828|メインをFocal loss+weight|
+|exp0050|0.8341|0.802|メインをFocal loss+weight * 1/2|
+|exp0051|||negatibeデータ減らす→30|
+|exp0038|||Label Smoothing|
+|exp0039|||positiveのlossを削除|
+|exp0040|||with last mixup|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
 |exp0039|||fpデータのpseudo|
+|||||
+|exp0039|||CBAM|
 |||||
 |exp0025|||Densenet|
 |exp0025|||Pseudo labeling|
