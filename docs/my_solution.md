@@ -7,6 +7,7 @@
 ## 課題
 - testとlocalが違う
 - trainにノイズが多い
+- 明確なネガティブ以外でnagative lossを学習しないようにする
 
 ## やりたいこと
 - [ ] Adversarial
