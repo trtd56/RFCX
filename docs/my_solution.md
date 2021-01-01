@@ -104,7 +104,7 @@
 |exp0053|0.8241|0.817|Label Smoothing Clip|
 |exp0054|0.8329|0.825|Label Smoothing Seq|
 |exp0055|||with last mixup|
-|exp0056|||with last mixup, |
+|exp0056|||with last mixup, 0.5|
 |exp0057|||positiveのlossを削除|
 |||||
 |exp0045|||OOF noisy label対策|
