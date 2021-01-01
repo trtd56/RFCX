@@ -101,8 +101,8 @@
 |exp0050|0.8341|0.802|メインをFocal loss+weight * 1/2|
 |exp0051|0.8352|0.833|negativeデータ減らす→30|
 |exp0052|0.8246|0.823|negativeデータ減らす→10|
-|exp0053|||Label Smoothing Clip|
-|exp0054|||Label Smoothing Seq|
+|exp0053|0.8241||Label Smoothing Clip|
+|exp0054|0.8329|0.825|Label Smoothing Seq|
 |exp0055|||with last mixup|
 |exp0056|||positiveのlossを削除|
 |||||
