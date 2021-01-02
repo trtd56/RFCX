@@ -105,7 +105,10 @@
 |exp0054|0.8329|0.825|Label Smoothing Seq|
 |exp0055|0.8287|0.828|with last mixup|
 |exp0056|0.8324|0.821|with last mixup, 0.5|
-|exp0057|||positiveのlossを削除|
+|exp0057|||negativeのlossを削除 BCE|
+|exp0058|||negativeのlossを削除 BCE+Seq|
+|exp0059|||negativeのlossを削除 BCE+Seq+Focal|
+|exp0060|||Window768|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
