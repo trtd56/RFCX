@@ -109,7 +109,7 @@
 |exp0058|0.8414|0.810|negativeのlossを削除 Seq|
 |exp0059|0.838|0.816|Window768|
 |exp0060|0.8085||max128|
-|exp0061|||min64|
+|exp0061|0.8303|0.826|min64|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
