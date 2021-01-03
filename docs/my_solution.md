@@ -106,9 +106,10 @@
 |exp0055|0.8287|0.828|with last mixup|
 |exp0056|0.8324|0.821|with last mixup, 0.5|
 |exp0057|0.8305|0.797|negativeのlossを削除 BCE|
-|exp0058|||negativeのlossを削除 BCE+Seq|
-|exp0059|||negativeのlossを削除 BCE+Seq+Focal|
-|exp0060|||Window768|
+|exp0058|0.8414|0.810|negativeのlossを削除 Seq|
+|exp0059|0.838|0.816|Window768|
+|exp0060|0.8085||max128|
+|exp0061|||min64|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
