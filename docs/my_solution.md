@@ -112,7 +112,7 @@
 |exp0061|0.8303|0.826|min64|
 |exp0062|not good|X|each32|
 |exp0063|0.8389|0.774|negativeのlossを削除 Seq, not 0.5|
-|exp0063|||negativeのlossを削除 Seq, not 0.5, max Focal 0.5|
+|exp0063|0.8424|0.766|negativeのlossを削除 Seq, max Focal 0.5|
 |exp0064|||negativeのlossを削除 Seq, negative smoothinng|
 |exp0064|||negativeのlossを削除 Seq, pseudo 0.9|
 |||||
