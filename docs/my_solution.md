@@ -108,8 +108,13 @@
 |exp0057|0.8305|0.797|negativeのlossを削除 BCE|
 |exp0058|0.8414|0.810|negativeのlossを削除 Seq|
 |exp0059|0.838|0.816|Window768|
-|exp0060|0.8085||max128|
+|exp0060|0.8085|X|max128|
 |exp0061|0.8303|0.826|min64|
+|exp0062|not good|X|each32|
+|exp0063|0.8389|0.774|negativeのlossを削除 Seq, not 0.5|
+|exp0063|||negativeのlossを削除 Seq, not 0.5, max Focal 0.5|
+|exp0064|||negativeのlossを削除 Seq, negative smoothinng|
+|exp0064|||negativeのlossを削除 Seq, pseudo 0.9|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
