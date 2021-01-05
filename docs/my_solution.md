@@ -114,13 +114,17 @@
 |exp0063|0.8389|0.774|negativeのlossを削除 Seq, not 0.5|
 |exp0064|0.8424|0.766|negativeのlossを削除 Seq, max Focal 0.5|
 |||||
-|exp0065|||FixBug|
-|exp0066|||Pseudo 0.9|
-|exp0067|||Labeel Smoothinng|
-|exp0068|||negativeのlossを削除 BCE(max, att)|
-|exp0069|||with last mixup|
-|exp0070|||Window768|
-|exp0071|||each32|
+|exp0065|0.8347|0.792|FixBug|
+|exp0066|0.8228|0.829|not nega loss del|
+|exp0067|0.8379|0.802|not Focal|
+|exp0068|0.8257|0.790|not Focal nega loss del|
+|exp0068|0.8318|0.800|Pseudo 0.9|
+|exp0069|||Labeel Smoothing|
+|exp0070|||negativeのlossを削除 BCE(max, att)|
+|exp0071|||with last mixup|
+|exp0072|||Window768|
+|exp0073|||each32|
+
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
