@@ -35,6 +35,10 @@
 
 ## 実験
 
+- Notebook: https://colab.research.google.com/drive/13CDWUNEktqgTDfQWQobAaHTi727OT_O9?authuser=1#scrollTo=Qmh8Vfikp6NZ
+- wandb: https://wandb.ai/trtd56/rfcx/table?workspace=user-trtd56
+- compe: https://www.kaggle.com/c/rfcx-species-audio-detection/submit
+
 |実験名|CV|LB|memo|
 |--|--|--|--|
 |exp0001|0.77662|0.734|baseline P100|
@@ -117,14 +121,12 @@
 |exp0065|0.8347|0.792|FixBug|
 |exp0066|0.8228|0.829|not nega loss del|
 |exp0067|0.8379|0.802|not Focal|
-|exp0068|0.8257|0.790|not Focal nega loss del|
-|exp0068|0.8318|0.800|Pseudo 0.9|
-|exp0069|||Labeel Smoothing|
-|exp0070|||negativeのlossを削除 BCE(max, att)|
-|exp0071|||with last mixup|
-|exp0072|||Window768|
-|exp0073|||each32|
-
+|exp0068|0.8257|0.790|not Focal, not nega loss del|
+|exp0069|0.8318|0.800|not Focal, Pseudo 0.9|
+|exp0070|0.8335|0.780|not Focal, Window768|
+|exp0071|||not Focal, each32|
+|exp0072|||Label Smoothing|
+|exp0073|||with last mixup|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
