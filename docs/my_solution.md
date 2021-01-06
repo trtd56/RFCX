@@ -126,7 +126,7 @@
 |exp0070|0.8335|0.780|not Focal, Window768|
 |exp0071|0.8349|0.809|not Focal, each32|
 |exp0072|0.8342|0.797|not Focal, Label Smoothing, only nega|
-|exp0073|||with last mixup|
+|exp0073|0.8368|0.792|with last mixup|
 |||||
 |exp0045|||OOF noisy label対策|
 |||||
@@ -137,6 +137,3 @@
 |exp0025|||Densenet|
 |exp0025|||Pseudo labeling|
 |exp0025|||TTA|
-
-#### best loss
-- exp0013: loss=0.694, LB=0.677
