@@ -124,8 +124,8 @@
 |exp0068|0.8257|0.790|not Focal, not nega loss del|
 |exp0069|0.8318|0.800|not Focal, Pseudo 0.9|
 |exp0070|0.8335|0.780|not Focal, Window768|
-|exp0071|||not Focal, each32|
-|exp0072|||Label Smoothing|
+|exp0071|0.8349|0.809|not Focal, each32|
+|exp0072|0.8342|0.797|not Focal, Label Smoothing, only nega|
 |exp0073|||with last mixup|
 |||||
 |exp0045|||OOF noisy label対策|
