@@ -8,7 +8,13 @@
 - testとlocalが違う
 - trainにノイズが多い
 - 明確なネガティブ以外でnagative lossを学習しないようにする
-
+- ResNet効かないそう？: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209041
+  - ResNestsとEfficientNetsは結構違うので、多様性を出すためにはよいかも
+- shinmura0さんの効いたやつ: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/208830
+- 欠損ラベルをみてもうまくいかないかも？: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209040
+- [Trust LBがよさそう？](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/207901#1134198)
+- CV/LB相関取れず: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684
+  - clipwise_outputをframewise_output time max
 ## やりたいこと
 - [ ] Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
