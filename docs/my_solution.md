@@ -5,18 +5,27 @@
 
 # memo
 
-- OOF noisy label対策
-- fpデータのpseudo
-- CBAM
-- Pseudo labeling
-- TTA
+## idea
 
-ResNestsとEfficientNets, DenseNet
+- noisy label対策: OOFでラベルの付け直し
+- Pseudo labeling
+  - testデータ
+  - 外部データ
+  - trainの他のラベル
+  - fpデータ
+- TTA
+- Model
+  - ResNests
+  - EfficientNets
+  - DenseNet
+  - ViT
+  - CBAM
 
 ## 課題
 - testとlocalが違う
 - trainにノイズが多い
 - 明確なネガティブ以外でnagative lossを学習しないようにする
+  - 良さそう
 - ResNet効かないそう？: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209041
   - ResNestsとEfficientNetsは結構違うので、多様性を出すためにはよいかも
 - shinmura0さんの効いたやつ: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/208830
@@ -24,9 +33,12 @@ ResNestsとEfficientNets, DenseNet
 - [Trust LBがよさそう？](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/207901#1134198)
 - CV/LB相関取れず: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684
   - clipwise_outputをframewise_output time max
+  - よさそう
+ 
 ## やりたいこと
-- [ ] Adversarial
+- [x] Adversarial
   - [参考Notebook](https://www.kaggle.com/tunguz/adversarial-rainforest)
+  - 現状は不要かも
 
 ## Dataset
 ### songtype_idについて
@@ -39,7 +51,7 @@ ResNestsとEfficientNets, DenseNet
 - Discussion: https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/198048
 
 ## 後で見る(まとめ系記事やNotebook)
-- [ ] [Previous Audio Competitions](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197737)
+- [x] [Previous Audio Competitions](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197737)
 - [ ] [Frogs and birds sounds in nature: research, resources and more](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197751)
 - [x] [COLA: 音声の汎用pre-trainモデル](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/197805)
 - [x] [アライさんの音声のData AugumentationのNotebook](https://www.kaggle.com/hidehisaarai1213/rfcx-audio-data-augmentation-japanese-english)
@@ -49,10 +61,6 @@ ResNestsとEfficientNets, DenseNet
 - [x] [切り取ったデータセット](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/199025)
 
 ## 実験
-
-- Notebook: https://colab.research.google.com/drive/13CDWUNEktqgTDfQWQobAaHTi727OT_O9?authuser=1#scrollTo=Qmh8Vfikp6NZ
-- wandb: https://wandb.ai/trtd56/rfcx/table?workspace=user-trtd56
-- compe: https://www.kaggle.com/c/rfcx-species-audio-detection/submit
 
 |実験名|CV|LB|memo|
 |--|--|--|--|
@@ -150,8 +158,10 @@ ResNestsとEfficientNets, DenseNet
 
 |実験名|CV|CV max|LB|LB max|memo|
 |--|--|--|--|--|--|
-|exp0065|0.8347||0.792||Focal|
-|exp0067|0.8379|0.8340|0.802||Base|
-|exp0068|0.8257||0.790||not nega loss del|
+|exp0065|0.8347|0.8287|0.792|0.789|Focal|
+|exp0065|0.8347|0.8287|0.792|0.794|Focal max|
+|exp0067|0.8379|0.8340|0.802|0.803|Base|
+|exp0067|0.8379|0.8340|0.802||Base max|
+|exp0068|0.8257|0.8246|0.790|0.785|not nega loss del|
 |exp0073|0.8368|0.8324|0.792|0.793|with last mixup|
 
