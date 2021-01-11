@@ -1,8 +1,17 @@
 # my_solution
+
 - Model: ResNet18
 - 5 fold CV
 
 # memo
+
+- OOF noisy label対策
+- fpデータのpseudo
+- CBAM
+- Pseudo labeling
+- TTA
+
+ResNestsとEfficientNets, DenseNet
 
 ## 課題
 - testとlocalが違う
@@ -133,13 +142,16 @@
 |exp0071|0.8349|0.809|not Focal, each32|
 |exp0072|0.8342|0.797|not Focal, Label Smoothing, only nega|
 |exp0073|0.8368|0.792|with last mixup|
-|||||
-|exp0045|||OOF noisy label対策|
-|||||
-|exp0039|||fpデータのpseudo|
-|||||
-|exp0039|||CBAM|
-|||||
-|exp0025|||Densenet|
-|exp0025|||Pseudo labeling|
-|exp0025|||TTA|
+
+
+### LB/CVの相関確認
+
+これでダメそうならTrust LBか？
+
+|実験名|CV|CV max|LB|LB max|memo|
+|--|--|--|--|--|--|
+|exp0065|0.8347||0.792||Focal|
+|exp0067|0.8379|0.8340|0.802||Base|
+|exp0068|0.8257||0.790||not nega loss del|
+|exp0073|0.8368|0.8324|0.792|0.793|with last mixup|
+
