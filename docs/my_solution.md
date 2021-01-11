@@ -2,18 +2,18 @@
 
 # memo
 
-## 課題
-- CVとLBの相関(→Trust LBがよいかも?)
+## ToDo
 
-## やりたいこと
-- noisy label対策: OOFでラベルの付け直し
+- CVとLBの相関をとる
+  - noisy labelっぽいのでOOFでラベルの付け直し
+  - Trust LBがよいかも?
 - Pseudo labeling
   - testデータ
   - 外部データ
   - trainの他のラベル
   - fpデータ
 - TTA
-- Model
+- Model選定
   - ViT
   - CBAM
 - songtype_idの考慮
