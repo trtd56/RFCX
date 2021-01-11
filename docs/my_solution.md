@@ -15,9 +15,6 @@
   - fpデータ
 - TTA
 - Model
-  - ResNests
-  - EfficientNets
-  - DenseNet
   - ViT
   - CBAM
 
@@ -61,6 +58,8 @@
 - [x] [切り取ったデータセット](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/199025)
 
 ## 実験
+
+### pre実験
 
 |実験名|CV|LB|memo|
 |--|--|--|--|
@@ -151,7 +150,6 @@
 |exp0072|0.8342|0.797|not Focal, Label Smoothing, only nega|
 |exp0073|0.8368|0.792|with last mixup|
 
-
 ### LB/CVの相関確認
 
 これでダメそうならTrust LBか？
@@ -165,3 +163,11 @@
 |exp0068|0.8257|0.8246|0.790|0.785|not nega loss del|
 |exp0073|0.8368|0.8324|0.792|0.793|with last mixup|
 
+### モデル選定
+
+|実験名|CV|LB|memo|
+|--|--|--|--|
+|exp0100|||Resnet18|
+|exp0101|||DenseNet|
+|exp0102|||ResNests50|
+|exp0103|||EfficientNets-B0|
