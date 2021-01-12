@@ -47,5 +47,3 @@
 |exp0102|||EfficientNets-B0|
 |exp0103|||ResNests50|
 |exp0104|||MobileNet-V2|
-
-|exp0103|||mobilenet|
