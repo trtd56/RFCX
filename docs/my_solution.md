@@ -42,7 +42,7 @@
 |--|--|--|--|
 |exp0100|0.8282|0.793|Resnet18 max|
 |||0.816|Resnet18 avg|
-|exp0101|0.825|0.803|DenseNet max|
+|exp0101|0.8313|0.803|DenseNet max|
 |||0.825|DenseNet avg (以降基本avg)|
 |exp0102|||EfficientNets-B0|
 |exp0103|||ResNests50|
