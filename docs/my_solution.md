@@ -31,6 +31,6 @@
 |||0.816|Resnet18 avg|
 |exp0101|0.8313|0.803|DenseNet max|
 |||0.825|DenseNet avg (以降基本avg)|
-|exp0102|0.8202||EfficientNets-B0|
-|exp0103|||ResNests50|
-|exp0104|||MobileNet-V2|
+|exp0102|0.8202|0.833|EfficientNets-B0|
+|exp0103|0.8397|0.851|ResNests50|
+|exp0104|0.8175|0.799|MobileNet-V2|
