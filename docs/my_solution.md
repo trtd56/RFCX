@@ -34,3 +34,14 @@
 |exp0102|0.8202|0.833|EfficientNets-B0|
 |exp0103|0.8397|0.851|ResNests50|
 |exp0104|0.8175|0.799|MobileNet-V2|
+
+そもそもベースの精度が低そう
+
+### モデル選定
+
+ResNet18で実験(Trust LB)
+
+|実験名|CV|LB|memo|
+|--|--|--|--|
+|exp0105|||not_bright_and_gamma|
+|exp0106|||not_fp30|
