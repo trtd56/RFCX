@@ -43,5 +43,5 @@ ResNet18で実験(Trust LB)
 
 |実験名|CV|LB|memo|
 |--|--|--|--|
-|exp0105|||not_bright_and_gamma|
+|exp0105|0.8279|0.808|not_bright_and_gamma|
 |exp0106|||not_fp30|
