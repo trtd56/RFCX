@@ -45,3 +45,4 @@ ResNet18で実験(Trust LB)
 |--|--|--|--|
 |exp0105|0.8279|0.808|not_bright_and_gamma|
 |exp0106|0.8053|0.804|not_bright_and_gamma, not_fp30|
+|exp0107|||not_bright_and_gamma. lr=3e-3|
