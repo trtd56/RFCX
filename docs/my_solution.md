@@ -47,5 +47,5 @@ ResNet18で実験(Trust LB)
 |exp0106|0.8053|0.804|not_bright_and_gamma, not_fp30|
 |exp0107|very bad|X|not_bright_and_gamma, lr=3e-3|
 |exp0108|0.8219|0.798|not_bright_and_gamma, lr=3e-4|
-|exp0109|||not_bright_and_gamma, only_clip_loss|
-|exp0110|||not_bright_and_gamma, 100 epoch|
+|exp0109|0.7889|0.842|not_bright_and_gamma, only_clip_loss|
+|exp0110|||not_bright_and_gamma, only_clip_with_max|
