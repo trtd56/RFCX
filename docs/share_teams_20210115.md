@@ -53,6 +53,8 @@
 効かない
 - cutout
 
+TTAは絶対効くだろうと思ってるけど試してない
+
 ### CV
 
 MultilabelStratifiedKFold
@@ -78,7 +80,6 @@ MultilabelStratifiedKFold
 効かない
  - Label Smoothing
 
- 
 ### アンサンブル
 - 5foldの平均
 - 複数モデルのstackingやaveragngはまだ試してない
