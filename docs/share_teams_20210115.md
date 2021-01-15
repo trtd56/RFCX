@@ -53,8 +53,6 @@
 効かない
 - cutout
 
-TTAは絶対効くだろうと思ってるけど試してない
-
 ### CV
 
 MultilabelStratifiedKFold
@@ -87,4 +85,15 @@ MultilabelStratifiedKFold
     - モデルのバリエーションが大事になりそう
     - ベースのモデルのスコアを上げることを優先してた
 
-
+### 試したいけど出来ていないこと
+- TTA
+- Pseudo labeling
+  - testデータ
+  - 外部データ
+  - trainの指定されていないラベル
+  - fpデータ
+- model
+  - ViT
+  - CBAM
+- songtype_idの考慮
+- OOFでラベルの付け直し(CVとLBの相関をとりたい)
