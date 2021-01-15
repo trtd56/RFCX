@@ -52,13 +52,15 @@
 ### CV
 
 MultilabelStratifiedKFold
-
+- ファイル毎にsplitしてた
+  - ファイルによってはマルチラベル問題になる
+  
 ### 損失
 
 4つのlossの荷重和
-① : clip wiseのattention出力
-② : clip wiseのmax pooling出力
-③ : seq wiseの疑似ラベル
+① : clip wiseのattention出力  
+② : clip wiseのmax pooling出力  
+③ : seq wiseの疑似ラベル  
 ④ : seq wiseの出力
 
 `loss = ① + ②*0.5 + ③ + ④*0.5`
