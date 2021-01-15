@@ -31,6 +31,8 @@
 - CosineAnnealingLR
   - t_max = 10
 
+[スケジューラーが大事というご意見も](https://www.kaggle.com/kneroma/inference-tpu-rfcx-audio-detection-fast)
+
 ### データ読み込み
 - 計算資源がしょぼいので[計算済みのスペクトログラムのnpz](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/198048)をcolabでDLして利用
 - 学習時はt_maxとt_minから実際に鳴いている声があると思われる部分を切り取る
