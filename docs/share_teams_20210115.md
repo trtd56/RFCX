@@ -43,16 +43,18 @@
 - spec aug
 - mix up
   - 中間層でmix upする手法(Manifold mixup)も試したけど良かったり悪かったりでよくわからない
+
 効いたり効かなかったり
 - ガンマノイズ
 - 光調整
+
 効かない
 - cutout
 
 ### CV
 
 MultilabelStratifiedKFold
-- ファイル毎にsplitしてた
+- ファイル毎でsplit
   - ファイルによってはマルチラベル問題になる
   
 ### 損失
@@ -70,6 +72,7 @@ MultilabelStratifiedKFold
 - ノイジーなデータらしい(鳴いている鳥がラベル付けされてなかったりする)が、tpラベルはわりと真っぽいので、negativeのlossに0がけしてpositive lossだけ計算する
   - clip wiseのlossは駄目
   - seq wiseのlossは少し効いた
+
 効かない
  - Label Smoothing
 
