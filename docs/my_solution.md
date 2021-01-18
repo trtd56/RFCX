@@ -4,9 +4,11 @@
 
 ## ToDo
 
+### Backlog
+
 - CVとLBの相関をとる
-  - noisy labelっぽいのでOOFでラベルの付け直し
-  - Trust LBがよいかも?
+  - noisy labelっぽいのでOOFでラベルの付け直し→聞いてなさそう？とりあえず現状はきょうへいさんに任せる
+  - Trust LBがよいかも?→Trust LBでいく
 - Pseudo labeling
   - testデータ
   - 外部データ
@@ -18,8 +20,13 @@
   - CBAM
 - songtype_idの考慮
 
+### Doing
+
+
+## Done
+
+
 ## 後で見る(まとめ系記事やNotebook)
-- 
 
 ## 実験
 
