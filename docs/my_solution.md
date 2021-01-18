@@ -21,14 +21,18 @@
 ### Doing
 
 - 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
-  - 課題: めっちゃ時間かかる
-    - 対策: サンプリングする？
-  - 結果
-    - 従来: Local 1 fold=0.7845 / LB=0.731
-    - 今回: Local 1 fold=0.7278 / LB=0.778
+  - 結果(Single Fold)
+    - サンプリング: Local 1 fold= / LB=
+  - 結果(CV)
+    - clip wiseのみ: CV= / LB=
+    - +pseudo: CV= / LB=
 
 ### Done
 
+- 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
+  - 結果(Single Fold)
+    - 従来: Local 1 fold=0.7845 / LB=0.731
+    - 今回: Local 1 fold=0.7278 / LB=0.778
 
 ## 後で見る(まとめ系記事やNotebook)
 
