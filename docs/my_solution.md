@@ -6,9 +6,6 @@
 
 ### Backlog
 
-- CVとLBの相関をとる
-  - noisy labelっぽいのでOOFでラベルの付け直し→聞いてなさそう？とりあえず現状はきょうへいさんに任せる
-  - Trust LBがよいかも?→Trust LBでいく
 - Pseudo labeling
   - testデータ
   - 外部データ
@@ -21,9 +18,11 @@
 - songtype_idの考慮
 
 ### Doing
+- 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
+  - 課題: めっちゃ時間かかる
+    - 対策: サンプリングする？
 
-
-## Done
+### Done
 
 
 ## 後で見る(まとめ系記事やNotebook)
