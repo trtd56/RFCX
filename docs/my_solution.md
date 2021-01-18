@@ -12,6 +12,7 @@
   - trainの他のラベル
   - fpデータ
 - TTA
+- SWA
 - Model選定
   - ViT
   - CBAM
