@@ -22,7 +22,7 @@
 
 - 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
   - 結果(Single Fold)
-    - サンプリング: Local 1 fold= / LB=
+    - サンプリング: Local 1 fold=0.6844 / LB=0.772
   - 結果(CV)
     - clip wiseのみ: CV= / LB=
     - +pseudo: CV= / LB=
