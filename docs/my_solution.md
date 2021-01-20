@@ -26,6 +26,7 @@
     - 500 Sampling: CV=0.7683 / LB=0.868
     - Sampling無し: CV=0.7766 / LB=0.874
     - pseudo seq: CV= /LB=
+    - mix up: CV= /LB=
 
 ### Done
 
