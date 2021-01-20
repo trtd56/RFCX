@@ -28,6 +28,7 @@
     - mix up: CV= /LB=
     - mix up(bugfix): CV= /LB=
     - last_mixup: CV= /LB=
+    - pseudo seq(0.9): CV= /LB=
 
 ### Done
 
