@@ -17,7 +17,6 @@
   - ViT
   - CBAM
 - songtype_idの考慮
-- last_mixup
 
 ### Doing
 
@@ -25,8 +24,10 @@
   - 結果(CV)
     - 500 Sampling: CV=0.7683 / LB=0.868
     - Sampling無し: CV=0.7766 / LB=0.874
-    - pseudo seq: CV= /LB=
+    - pseudo seq: CV=0.7766 /LB=
     - mix up: CV= /LB=
+    - mix up(bugfix): CV= /LB=
+    - last_mixup: CV= /LB=
 
 ### Done
 
