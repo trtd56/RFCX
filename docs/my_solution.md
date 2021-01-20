@@ -25,8 +25,9 @@
     - 500 Sampling: CV=0.7683 / LB=0.868
     - Sampling無し: CV=0.7766 / LB=0.874
     - pseudo seq: CV=0.7766 /LB=
-    - mix up: CV=0.803 /LB=
-    - mix up(bugfix): CV= /LB=
+    - mix up: CV=0.8030 /LB=
+    - mix up(bugfix): CV=0.8053 /LB=0.846
+    - mix up only positive: CV=0.7948 / LB=0.842
     - last_mixup: CV= /LB=
     - pseudo seq(0.9): CV= /LB=
 
