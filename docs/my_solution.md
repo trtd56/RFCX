@@ -17,15 +17,16 @@
   - ViT
   - CBAM
 - songtype_idの考慮
+- last_mixup
 
 ### Doing
 
-- 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
-  - 結果(Single Fold)
-    - サンプリング: Local 1 fold= / LB=
+- 一旦普通に学習してから、ラベルが付いているもののみで勾配計算する2st制
   - 結果(CV)
-    - clip wiseのみ: CV= / LB=
-    - +pseudo: CV= / LB=
+    - 500 Sampling: CV=0.7683 / LB=0.868
+    - Sampling無し: CV=0.7766 / LB=0.874
+    - pseudo seq: CV= /LB=
+    - mix up: CV= /LB=
 
 ### Done
 
@@ -33,6 +34,8 @@
   - 結果(Single Fold)
     - 従来: Local 1 fold=0.7845 / LB=0.731
     - 今回: Local 1 fold=0.7278 / LB=0.778
+    - サンプリング: Local 1 fold=0.6844 / LB=0.772
+    - 2nd stage(+ 5 epoch): Local 1 fold=0.7661 / LB=0.808
 
 ## 後で見る(まとめ系記事やNotebook)
 
