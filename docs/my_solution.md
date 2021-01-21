@@ -9,27 +9,31 @@
 - Pseudo labeling
   - testデータ
   - 外部データ
-  - trainの他のラベル
-  - fpデータ
+
 - TTA
 - SWA
 - Model選定
   - ViT
   - CBAM
 - songtype_idの考慮
+- mixup
+- last_mixup
 
 ### Doing
 
+- pseudo labeling
+  - train(tp/fp)の他のラベル
+- denoise
 - 一旦普通に学習してから、ラベルが付いているもののみで勾配計算する2st制
   - 結果(CV)
     - 500 Sampling: CV=0.7683 / LB=0.868
     - Sampling無し: CV=0.7766 / LB=0.874
-    - pseudo seq: CV=0.7766 /LB=
+    - pseudo seq: CV=0.7766 /LB=0.871
     - mix up: CV=0.8030 /LB=
     - mix up(bugfix): CV=0.8053 /LB=0.846
     - mix up only positive: CV=0.7948 / LB=0.842
-    - last_mixup: CV= /LB=
-    - pseudo seq(0.9): CV= /LB=
+    - pseudo seq(0.9): CV=0.7716 /LB=
+    - pseudo seq(0.5): CV= /LB=
 
 ### Done
 
