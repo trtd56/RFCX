@@ -33,7 +33,7 @@
     - mix up(bugfix): CV=0.8053 /LB=0.846
     - mix up only positive: CV=0.7948 / LB=0.842
     - pseudo seq(0.9): CV=0.7716 /LB=
-    - pseudo seq(0.5): CV= /LB=
+    - pseudo seq(0.5): CV=0.7757 /LB=
 
 ### Done
 
