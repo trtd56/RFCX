@@ -19,6 +19,7 @@
   - last_mixup
   - TTA
   - SWA
+  - Focal Loss([CPMPのやつ](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/213075)が良さそう)
 
 ### Doing
 
