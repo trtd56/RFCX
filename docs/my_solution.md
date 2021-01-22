@@ -22,8 +22,18 @@
 ### Doing
 
 - pseudo labeling
-  - train(tp/fp)の他のラベル
+  - train(tp/fp)の他のラベル: CV= / LB=0.903
 - denoise
+
+
+### Done
+
+- 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
+  - 結果(Single Fold)
+    - 従来: Local 1 fold=0.7845 / LB=0.731
+    - 今回: Local 1 fold=0.7278 / LB=0.778
+    - サンプリング: Local 1 fold=0.6844 / LB=0.772
+    - 2nd stage(+ 5 epoch): Local 1 fold=0.7661 / LB=0.808
 - 一旦普通に学習してから、ラベルが付いているもののみで勾配計算する2st制
   - 結果(CV)
     - 500 Sampling: CV=0.7683 / LB=0.868
@@ -34,16 +44,7 @@
     - mix up only positive: CV=0.7948 / LB=0.842
     - pseudo seq(0.9): CV=0.7716 /LB=
     - pseudo seq(0.5): CV=0.7757 /LB=
-
-### Done
-
-- 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
-  - 結果(Single Fold)
-    - 従来: Local 1 fold=0.7845 / LB=0.731
-    - 今回: Local 1 fold=0.7278 / LB=0.778
-    - サンプリング: Local 1 fold=0.6844 / LB=0.772
-    - 2nd stage(+ 5 epoch): Local 1 fold=0.7661 / LB=0.808
-
+    
 ## 後で見る(まとめ系記事やNotebook)
 
 ## 実験
