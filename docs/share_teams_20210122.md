@@ -42,3 +42,11 @@
   - epoch = 5
   - batch size = 32
 - スコア: CV=0.9260 / LB=0.903
+
+
+## 今後ためすこと
+- negativeもpseudo labeling(0.1未満とかの閾値)
+- frame wiseでpseudo labelng(今回はclip wise)
+- denoiseしたデータを試す
+- testデータをつかう
+- その他の外部データを使う
