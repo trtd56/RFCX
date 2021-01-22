@@ -30,7 +30,7 @@
 - denoise
   - 2st stage: CV=0.7579 / LB=0.828
     - [testも同じ処理](https://www.kaggle.com/takamichitoda/spectrogram-generation-with-denoise?scriptVersionId=52441091): LB=
-  - 3rd stage: CV= / LB=
+  - 3rd stage: CV=0.8954 / LB=0.858
   
 ### Done
     
