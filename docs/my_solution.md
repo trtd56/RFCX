@@ -29,7 +29,9 @@
   - negativeもpseudo labeling(0.1未満とかの閾値)
 - denoise
   - 2st stage: CV=0.7579 / LB=0.828
+    - testも同じ処理: LB=
   - 3rd stage: CV= / LB=
+  
 ### Done
     
 ## 後で見る(まとめ系記事やNotebook)
