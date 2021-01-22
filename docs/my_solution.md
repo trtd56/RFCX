@@ -22,7 +22,7 @@
 ### Doing
 
 - pseudo labeling
-  - train(tp/fp)の他のラベル: CV= / LB=0.903
+  - train(tp/fp)の他のラベル: CV=0.9260 / LB=0.903
 - denoise
 
 
