@@ -25,7 +25,7 @@
 
 - pseudo labeling
   - train(tp/fp)の他のラベル: CV=0.9260 / LB=0.903
-  - frame wiseでpseudo labelng(今回はclip wise)
+  - frame wiseでpseudo labelng: CV=0.7777 / LB=0.874
   - denoise
   - negativeもpseudo labeling(0.1未満とかの閾値)
   
