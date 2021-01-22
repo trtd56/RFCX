@@ -29,7 +29,7 @@
   - negativeもpseudo labeling(0.1未満とかの閾値)
 - denoise
   - 2st stage: CV=0.7579 / LB=0.828
-    - [testも同じ処理](https://www.kaggle.com/takamichitoda/spectrogram-generation-with-denoise?scriptVersionId=52436077): LB=
+    - [testも同じ処理](https://www.kaggle.com/takamichitoda/spectrogram-generation-with-denoise?scriptVersionId=52441091): LB=
   - 3rd stage: CV= / LB=
   
 ### Done
