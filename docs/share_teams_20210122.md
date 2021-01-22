@@ -35,6 +35,7 @@
 
 ### 3rd stage
 - 1st stageのモデルの重みからfine-tuning  
+- 明確にtp_train, fp_trainでラベル付けされているもの以外の勾配を計算しない
 - 2nd stageの最終モデルでpseudo labeling
   - 閾値0.9で5foldのモデルのうち、3件以上がTrueと予測したラベルをclip wiseで付与
 - ハイパーパラメータ
