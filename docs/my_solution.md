@@ -11,6 +11,7 @@
   - ViT
   - CBAM
 - songtype_idの考慮
+- testにノイズを加える
 - Pseudo labeling
   - testデータをつかう
   - その他の外部データを使う
