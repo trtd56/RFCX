@@ -28,7 +28,7 @@
   - train(tp/fp)の他のラベル: CV=0.9260 / LB=0.903
   - frame wiseでpseudo labelng: CV=0.7777 / LB=0.874
   - negativeもpseudo labeling(0.1未満とかの閾値)
-    - exp0138: CV=0.8513233304023743 / LB=
+    - exp0138: CV=0.8513 / LB=0.850
     - exp0139(bug fix): CV= / LB=
 - denoise
   - 2st stage: CV=0.7579 / LB=0.828
