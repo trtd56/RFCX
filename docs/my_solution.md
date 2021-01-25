@@ -27,6 +27,8 @@
   - train(tp/fp)の他のラベル: CV=0.9260 / LB=0.903
   - frame wiseでpseudo labelng: CV=0.7777 / LB=0.874
   - negativeもpseudo labeling(0.1未満とかの閾値)
+    - exp0138: CV=0.8513233304023743 / LB=
+    - exp0139(bug fix): CV= / LB=
 - denoise
   - 2st stage: CV=0.7579 / LB=0.828
     - [testも同じ処理](https://www.kaggle.com/takamichitoda/spectrogram-generation-with-denoise?scriptVersionId=52441091): LB=0.857
