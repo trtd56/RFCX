@@ -5,25 +5,29 @@
 ## ToDo
 
 ### Backlog
-
-
 - Model選定
   - ViT
   - CBAM
 - songtype_idの考慮
-- testにノイズを加える
-- Pseudo labeling
-  - testデータをつかう
-  - その他の外部データを使う
+- その他の外部データのPseudoLabeling
 - 一般的な改善手法
-  - mixup
-  - last_mixup
   - TTA
   - SWA
-  - Focal Loss([CPMPのやつ](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/213075)が良さそう)
-  - Label Weight
 
 ### Doing
+
+- 3rd stage (pseudoはpositive onlyが良さそう)
+  - Focal Loss(weightはpositiveのみ): 
+  - Focal Loss(weightはnegativeも):
+  - tp_trainのみpseudo:
+  - mixup:
+  - mixup layer:
+  - Label Weight
+- testデータのpseudo
+- ResNest
+- testにtrainから抽出したノイズを乗せる
+
+### Done
 
 - pseudo labeling
   - train(tp/fp)の他のラベル: CV=0.9260 / LB=0.903
@@ -33,11 +37,9 @@
     - exp0141(bug fix): CV=0.9446 / LB=0.878
 - denoise
   - 2st stage: CV=0.7579 / LB=0.828
-    - [testも同じ処理](https://www.kaggle.com/takamichitoda/spectrogram-generation-with-denoise?scriptVersionId=52441091): LB=0.857
+  - testも同じ処理: LB=0.857
   - 3rd stage: CV=0.8954 / LB=0.858
-  
-### Done
-    
+
 ## 後で見る(まとめ系記事やNotebook)
 
 ## 実験
