@@ -17,9 +17,9 @@
 ### Doing
 
 - 3rd stage (pseudoはpositive onlyが良さそう)
-  - Focal Loss(weightはpositiveのみ): 
+  - Focal Loss(weightはpositiveのみ):  CV=0.8952 / LB=0.911
   - Focal Loss(weightはnegativeも):
-  - tp_trainのみpseudo:
+  - tp_trainのみpseudo: CV=0.8999 / LB=0.840
   - mixup:
   - mixup layer:
   - Label Weight
