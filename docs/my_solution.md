@@ -6,44 +6,37 @@
 
 ### Backlog
 
-- Pseudo labeling
-  - testデータ
-  - 外部データ
 
-- TTA
-- SWA
 - Model選定
   - ViT
   - CBAM
 - songtype_idの考慮
-- mixup
-- last_mixup
+- testにノイズを加える
+- Pseudo labeling
+  - testデータをつかう
+  - その他の外部データを使う
+- 一般的な改善手法
+  - mixup
+  - last_mixup
+  - TTA
+  - SWA
+  - Focal Loss([CPMPのやつ](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/213075)が良さそう)
 
 ### Doing
 
 - pseudo labeling
-  - train(tp/fp)の他のラベル
+  - train(tp/fp)の他のラベル: CV=0.9260 / LB=0.903
+  - frame wiseでpseudo labelng: CV=0.7777 / LB=0.874
+  - negativeもpseudo labeling(0.1未満とかの閾値)
+    - exp0138: CV=0.8513 / LB=0.850
+    - exp0139(bug fix): CV= / LB=
 - denoise
-- 一旦普通に学習してから、ラベルが付いているもののみで勾配計算する2st制
-  - 結果(CV)
-    - 500 Sampling: CV=0.7683 / LB=0.868
-    - Sampling無し: CV=0.7766 / LB=0.874
-    - pseudo seq: CV=0.7766 /LB=0.871
-    - mix up: CV=0.8030 /LB=
-    - mix up(bugfix): CV=0.8053 /LB=0.846
-    - mix up only positive: CV=0.7948 / LB=0.842
-    - pseudo seq(0.9): CV=0.7716 /LB=
-    - pseudo seq(0.5): CV=0.7757 /LB=
-
+  - 2st stage: CV=0.7579 / LB=0.828
+    - [testも同じ処理](https://www.kaggle.com/takamichitoda/spectrogram-generation-with-denoise?scriptVersionId=52441091): LB=0.857
+  - 3rd stage: CV=0.8954 / LB=0.858
+  
 ### Done
-
-- 明確にラベルがつけられているもの以外の勾配を計算しないようにして学習
-  - 結果(Single Fold)
-    - 従来: Local 1 fold=0.7845 / LB=0.731
-    - 今回: Local 1 fold=0.7278 / LB=0.778
-    - サンプリング: Local 1 fold=0.6844 / LB=0.772
-    - 2nd stage(+ 5 epoch): Local 1 fold=0.7661 / LB=0.808
-
+    
 ## 後で見る(まとめ系記事やNotebook)
 
 ## 実験
