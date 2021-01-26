@@ -30,7 +30,7 @@
   - frame wiseでpseudo labelng: CV=0.7777 / LB=0.874
   - negativeもpseudo labeling(0.1未満とかの閾値)
     - exp0138: CV=0.8513 / LB=0.850
-    - exp0141(bug fix): CV=0.9446 / LB=
+    - exp0141(bug fix): CV=0.9446 / LB=0.878
 - denoise
   - 2st stage: CV=0.7579 / LB=0.828
     - [testも同じ処理](https://www.kaggle.com/takamichitoda/spectrogram-generation-with-denoise?scriptVersionId=52441091): LB=0.857
