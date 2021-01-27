@@ -27,7 +27,7 @@
   - mixup negatveも: 
 - testデータのpseudo
 - ResNest
-- testにtrainから抽出したノイズを乗せる
+- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52892411)
 
 ### Done
 
