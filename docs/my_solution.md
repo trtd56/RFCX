@@ -21,8 +21,9 @@
   - Focal Loss(weightはnegativeも): CV=0.8936 / LB=0.900
   - tp_trainのみpseudo: CV=0.8999 / LB=0.840
   - Label Weight: CV=0.925 / LB=0.869
-  - mixup:
-  - mixup layer:
+  - mixup: CV=0.9346 / LB=0.912
+  - mixup + alpha: CV= / LB
+  - mixup layer: CV= / LB
 - testデータのpseudo
 - ResNest
 - testにtrainから抽出したノイズを乗せる
