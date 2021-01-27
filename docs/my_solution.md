@@ -20,7 +20,7 @@
   - Focal Loss(weightはpositiveのみ):  CV=0.8952 / LB=0.911
   - Focal Loss(weightはnegativeも): CV=0.8936 / LB=0.900
   - tp_trainのみpseudo: CV=0.8999 / LB=0.840
-  - Label Weight:
+  - Label Weight: CV=0.925 / LB=0.869
   - mixup:
   - mixup layer:
 - testデータのpseudo
