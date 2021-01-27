@@ -24,6 +24,7 @@
   - mixup: CV=0.9346 / LB=0.912
   - mixup + alpha: CV= / LB
   - mixup layer: CV= / LB
+  - mixup negatveも: 
 - testデータのpseudo
 - ResNest
 - testにtrainから抽出したノイズを乗せる
