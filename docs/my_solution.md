@@ -18,11 +18,11 @@
 
 - 3rd stage (pseudoはpositive onlyが良さそう)
   - Focal Loss(weightはpositiveのみ):  CV=0.8952 / LB=0.911
-  - Focal Loss(weightはnegativeも):
+  - Focal Loss(weightはnegativeも): CV=0.8936 / LB=0.900
   - tp_trainのみpseudo: CV=0.8999 / LB=0.840
+  - Label Weight:
   - mixup:
   - mixup layer:
-  - Label Weight
 - testデータのpseudo
 - ResNest
 - testにtrainから抽出したノイズを乗せる
