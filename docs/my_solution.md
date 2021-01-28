@@ -22,9 +22,10 @@
   - tp_trainのみpseudo: CV=0.8999 / LB=0.840
   - Label Weight: CV=0.925 / LB=0.869
   - mixup: CV=0.9346 / LB=0.912
-  - mixup + alpha: CV= / LB
-  - mixup layer: CV= / LB
+  - mixup layer: CV=0.9392 / LB=0.907
   - mixup negatveも: CV=0.9062 /LB=0.907
+- Label Weight min
+- negative sampling
 - testデータのpseudo: CV=0.9325 / LB=0.909
 - ResNest
 - testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data)
