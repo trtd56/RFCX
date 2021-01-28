@@ -24,7 +24,7 @@
   - mixup: CV=0.9346 / LB=0.912
   - mixup + alpha: CV= / LB
   - mixup layer: CV= / LB
-  - mixup negatveも: 
+  - mixup negatveも: CV=0.9062 /LB=0.907
 - testデータのpseudo: CV=0.9325 / LB=0.909
 - ResNest
 - testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52892411)
