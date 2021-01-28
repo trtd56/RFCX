@@ -27,7 +27,7 @@
   - mixup negatveも: CV=0.9062 /LB=0.907
 - testデータのpseudo: CV=0.9325 / LB=0.909
 - ResNest
-- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52892411)
+- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data)
 
 ### Done
 
