@@ -16,6 +16,13 @@
 
 ### Doing
 
+- Label Weight min
+- negative sampling
+- ResNest
+- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data)
+
+### Done
+
 - 3rd stage (pseudoはpositive onlyが良さそう)
   - Focal Loss(weightはpositiveのみ):  CV=0.8952 / LB=0.911
   - Focal Loss(weightはnegativeも): CV=0.8936 / LB=0.900
@@ -24,14 +31,7 @@
   - mixup: CV=0.9346 / LB=0.912
   - mixup layer: CV=0.9392 / LB=0.907
   - mixup negatveも: CV=0.9062 /LB=0.907
-- Label Weight min
-- negative sampling
 - testデータのpseudo: CV=0.9325 / LB=0.909
-- ResNest
-- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data)
-
-### Done
-
 - pseudo labeling
   - train(tp/fp)の他のラベル: CV=0.9260 / LB=0.903
   - frame wiseでpseudo labelng: CV=0.7777 / LB=0.874
