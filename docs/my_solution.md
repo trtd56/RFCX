@@ -18,7 +18,7 @@
 
 |exp|CP|Prec|LB|memo|
 |--|--|--|--|--|
-|150|0.9131|0.3565|0.890|negative sampling|
+|150|0.9131|0.3565|0.890|Under sampling|
 |151||||Label Weight min|
 
 - ResNest
