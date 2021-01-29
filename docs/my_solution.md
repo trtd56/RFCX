@@ -16,8 +16,11 @@
 
 ### Doing
 
-- Label Weight min
-- negative sampling
+|exp|CP|Prec|LB|memo|
+|--|--|--|--|--|
+|150|0.9131|0.3565|0.890|negative sampling|
+|151||||Label Weight min|
+
 - ResNest
 - testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data)
 
