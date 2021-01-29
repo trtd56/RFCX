@@ -22,7 +22,7 @@
 |151||||Label Weight min|
 
 - ResNest
-- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data)
+- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data), [推論Notebook](https://www.kaggle.com/takamichitoda/rfxc-add-noise?scriptVersionId=52980971)
 
 ### Done
 
