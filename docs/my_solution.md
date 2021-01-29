@@ -20,6 +20,10 @@
 |--|--|--|--|--|
 |150|0.9131|0.3565|0.890|Under sampling|
 |151|0.9412|0.6282|0.868|Label Weight min|
+|152||||exp0146で閾値=0.75|
+|153||||exp0151で閾値=0.75|
+|154||||exp0146で閾値=0.5|
+|155||||exp0151で閾値=0.5|
 
 - ResNest
 - testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data), [推論Notebook](https://www.kaggle.com/takamichitoda/rfxc-add-noise?scriptVersionId=52980971)
