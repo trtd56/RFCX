@@ -8,7 +8,6 @@
 - Model選定
   - ViT
   - CBAM
-- songtype_idの考慮
 - その他の外部データのPseudoLabeling
 - 一般的な改善手法
   - TTA
@@ -25,11 +24,8 @@
 |154||||exp0146で閾値=0.75|
 |155||||exp0146で閾値=0.5|
 
+- songtype_idの考慮
 - ResNest
-- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data), [推論Notebook](https://www.kaggle.com/takamichitoda/rfxc-add-noise?scriptVersionId=52980971)
-  - Origin: CV=0.9346 / LB=0.912
-    - ノイズ除去のやつで抽出: LB=0.902
-    - Bestモデルで予測(x10): LB=0.767
 
 ### Done
 
@@ -52,7 +48,10 @@
   - 2st stage: CV=0.7579 / LB=0.828
   - testも同じ処理: LB=0.857
   - 3rd stage: CV=0.8954 / LB=0.858
-
+- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data), [推論Notebook](https://www.kaggle.com/takamichitoda/rfxc-add-noise?scriptVersionId=52980971)
+  - Origin: CV=0.9346 / LB=0.912
+    - ノイズ除去のやつで抽出: LB=0.902
+    - Bestモデルで予測(x10): LB=0.767
 ## 後で見る(まとめ系記事やNotebook)
 
 ## 実験
