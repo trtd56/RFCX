@@ -28,7 +28,8 @@
 - ResNest
 - testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data), [推論Notebook](https://www.kaggle.com/takamichitoda/rfxc-add-noise?scriptVersionId=52980971)
   - Origin: CV=0.9346 / LB=0.912
-    - LB=0.902
+    - ノイズ除去のやつで抽出: LB=0.902
+    - Bestモデルで予測(x10): LB=0.767
 
 ### Done
 
