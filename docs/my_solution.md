@@ -8,7 +8,6 @@
 - Model選定
   - ViT
   - CBAM
-- songtype_idの考慮
 - その他の外部データのPseudoLabeling
 - 一般的な改善手法
   - TTA
@@ -16,13 +15,27 @@
 
 ### Doing
 
-|exp|CP|Prec|LB|memo|
+|exp|CV|Prec|LB|memo|
 |--|--|--|--|--|
 |150|0.9131|0.3565|0.890|Under sampling|
 |151|0.9412|0.6282|0.868|Label Weight min|
+|152|0.9487|0.6270|0.874|exp0151で閾値=0.75|
+|153|0.9507|0.6417|0.876|exp0151で閾値=0.5|
+|154|0.9538|0.4227|0.923|exp0146で閾値=0.5|
+|154|0.5743(0.8507)|0.3244(0.5288)||songtype_idの考慮1st|
+|154|0.6841(0.9136)|0.2151(0.2824)||songtype_idの考慮2nd|
+|154|0.7848(0.8745)|0.3124(0.3131)|0.826|songtype_idの考慮3rd|
+|155|0.7558|||songtype_idの考慮2nd, 計算修正|
+|156|0.7958|0.4475|0.806|songtype_idの考慮1st, 計算修正|
+|156|0.7611|0.3480||songtype_idの考慮2nd, 計算修正|
+|156|0.9437|0.3393|0.900|songtype_idの考慮3rd, 計算修正|
+|156|0.8516|0.4007||songtype_idの考慮4th, 計算修正|
+|156||||songtype_idの考慮5th, 計算修正|
+|157||||songtype_idの考慮3rd, 計算修正, alpha min|
+|158||||songtype_idの考慮3rd, 計算修正, nega pseudo|
+|158||||songtype_idの考慮3rd, 計算修正, pseudo thr=0.3|
 
 - ResNest
-- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data), [推論Notebook](https://www.kaggle.com/takamichitoda/rfxc-add-noise?scriptVersionId=52980971)
 
 ### Done
 
@@ -45,7 +58,10 @@
   - 2st stage: CV=0.7579 / LB=0.828
   - testも同じ処理: LB=0.857
   - 3rd stage: CV=0.8954 / LB=0.858
-
+- testにtrainから抽出したノイズを乗せる→[データ作成](https://www.kaggle.com/takamichitoda/rfcx-add-noise-to-test?scriptVersionId=52907736), [Dataset](https://www.kaggle.com/takamichitoda/rfxc-add-noise-test-data), [推論Notebook](https://www.kaggle.com/takamichitoda/rfxc-add-noise?scriptVersionId=52980971)
+  - Origin: CV=0.9346 / LB=0.912
+    - ノイズ除去のやつで抽出: LB=0.902
+    - Bestモデルで予測(x10): LB=0.767
 ## 後で見る(まとめ系記事やNotebook)
 
 ## 実験
