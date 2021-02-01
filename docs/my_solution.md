@@ -29,6 +29,8 @@
 |156|0.7958|0.4475|0.806|songtype_idの考慮1st, 計算修正|
 |156|0.7611|0.3480||songtype_idの考慮2nd, 計算修正|
 |156|0.9437|0.3393|0.900|songtype_idの考慮3rd, 計算修正|
+|156||||songtype_idの考慮4th, 計算修正|
+|156||||songtype_idの考慮5th, 計算修正|
 |157||||songtype_idの考慮3rd, 計算修正, alpha min|
 |158||||songtype_idの考慮3rd, 計算修正, nega pseudo|
 |158||||songtype_idの考慮3rd, 計算修正, pseudo thr=0.3|
