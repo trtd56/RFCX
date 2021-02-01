@@ -39,8 +39,6 @@
 |158||||efficientnet_b0, 3rd|
 |159||||pseudo thr=0.3|
 
-- ResNest
-
 ### Done
 
 - 3rd stage (pseudoはpositive onlyが良さそう)
