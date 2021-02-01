@@ -5,9 +5,7 @@
 ## ToDo
 
 ### Backlog
-- Model選定
-  - ViT
-  - CBAM
+
 - その他の外部データのPseudoLabeling
 - 一般的な改善手法
   - TTA
@@ -64,6 +62,9 @@
   - Origin: CV=0.9346 / LB=0.912
     - ノイズ除去のやつで抽出: LB=0.902
     - Bestモデルで予測(x10): LB=0.767
+- ~~Model選定~~
+  - ~~ViT~~
+  - ~~CBAM~~
 ## 後で見る(まとめ系記事やNotebook)
 
 ## 実験
