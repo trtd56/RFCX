@@ -31,9 +31,13 @@
 |156|0.9437|0.3393|0.900|songtype_idの考慮3rd, 計算修正|
 |156|0.8516|0.4007||songtype_idの考慮4th, 計算修正|
 |156||||songtype_idの考慮5th, 計算修正|
-|157||||songtype_idの考慮3rd, 計算修正, alpha min|
-|158||||songtype_idの考慮3rd, 計算修正, nega pseudo|
-|158||||songtype_idの考慮3rd, 計算修正, pseudo thr=0.3|
+|157||||densenet121, 1st|
+|157||||densenet121, 2nd|
+|157||||densenet121, 3rd|
+|158||||efficientnet_b0, 1st|
+|158||||efficientnet_b0, 2nd|
+|158||||efficientnet_b0, 3rd|
+|159||||pseudo thr=0.3|
 
 - ResNest
 
