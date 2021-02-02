@@ -20,7 +20,7 @@
 |157||||densenet121, 3rd|
 |158|0.7768|0.4096||efficientnet_b0, 1st|
 |158|0.7567|0.3217||efficientnet_b0, 2nd|
-|158||||efficientnet_b0, 3rd|
+|158|0.8964|0.2153||efficientnet_b0, 3rd|
 |161|0.9691|0.427|0.922|勾配累積|
 |162||||Cycle Pseudoo|
 |163||||cut image|
