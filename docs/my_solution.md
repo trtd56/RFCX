@@ -30,7 +30,7 @@
 |156|0.8516|0.4007|0.825|songtype_idの考慮4th, 計算修正|
 |156|0.9560|0.3963|0.829|songtype_idの考慮5th, 計算修正|
 |157|0.7862|0.3907||densenet121, 1st|
-|157||||densenet121, 2nd|
+|157|0.7645|0.2856||densenet121, 2nd|
 |157||||densenet121, 3rd|
 |158|0.7768|0.4096||efficientnet_b0, 1st|
 |158|0.7567|0.3217||efficientnet_b0, 2nd|
