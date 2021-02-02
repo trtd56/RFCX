@@ -35,11 +35,9 @@
 |158|0.7768|0.4096||efficientnet_b0, 1st|
 |158|0.7567|0.3217||efficientnet_b0, 2nd|
 |158||||efficientnet_b0, 3rd|
-|159||||pseudo thr=0.3|
-
-- リファクタリング
-  - 勾配累積
-  - 4th, 5thの削除(26ラベルも)
+|160||||pseudo thr=0.3|
+|161||||勾配累積|
+|162||||cut image|
 
 ### Done
 
