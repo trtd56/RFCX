@@ -22,7 +22,8 @@
 |158|0.7567|0.3217||efficientnet_b0, 2nd|
 |158||||efficientnet_b0, 3rd|
 |161||||勾配累積|
-|162||||cut image|
+|162||||Cycle Pseudoo|
+|163||||cut image|
 
 ### Done
 
