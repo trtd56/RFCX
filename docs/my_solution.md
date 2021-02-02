@@ -35,7 +35,7 @@
 |158|0.7768|0.4096||efficientnet_b0, 1st|
 |158|0.7567|0.3217||efficientnet_b0, 2nd|
 |158||||efficientnet_b0, 3rd|
-|160||||pseudo thr=0.3|
+|160|0.9625|0.3868|0.918|pseudo thr=0.3|
 |161||||勾配累積|
 |162||||cut image|
 
