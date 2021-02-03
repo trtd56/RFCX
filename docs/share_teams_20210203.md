@@ -78,6 +78,7 @@ class RFCXNet(nn.Module):
 |従来|0.9392|0.4406|0.912|
 |last layer|0.9434|0.4375|0.907|
 
+#### pseudo0.5 + Focal + positive重み減衰
 
 |mixup type|CV|Precision|LB|
 |--|--|--|--|
