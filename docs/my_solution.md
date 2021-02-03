@@ -31,12 +31,8 @@
 |166||||densenet121, 3rd, use resnet pseudo|
 |167|0.9589|0.657|0.942|pos loss weight, mixup_last|
 |168||||efficientnet_b0 mixup_last|
-
-
-|168||||pos loss weight, |
-|168||||pos loss weight, 勾配累積|
-
-exp0117
+|169||||exp0117の重みを使ってResnest|
+|170||||MobileNet|
 
 ### Done
 
