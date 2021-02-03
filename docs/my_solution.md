@@ -28,7 +28,7 @@
 |164|0.7621|0.315||efficientnet_b0, 2nd, 8 epoch|
 |164|0.8753|0.8768||efficientnet_b0, 3rd, use resnet pseudo|
 |165|not good|not good|X|pos loss weight, alpha_min|
-|166||||densenet121, 3rd, use resnet pseudo|
+|166|0.9392|0.8706||densenet121, 3rd, use resnet pseudo|
 |167|0.9589|0.657|0.942|pos loss weight, mixup_last|
 |168|0.8897|0.8748||efficientnet_b0 mixup_last|
 |169||||exp0117の重みを使ってResnest|
