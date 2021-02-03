@@ -30,7 +30,7 @@
 |165|not good|not good|X|pos loss weight, alpha_min|
 |166||||densenet121, 3rd, use resnet pseudo|
 |167|0.9589|0.657|0.942|pos loss weight, mixup_last|
-|168||||efficientnet_b0 mixup_last|
+|168|0.8897|0.8748||efficientnet_b0 mixup_last|
 |169||||exp0117の重みを使ってResnest|
 |170||||MobileNet|
 
