@@ -17,15 +17,13 @@
 |--|--|--|--|--|
 |157|0.7862|0.3907||densenet121, 1st|
 |157|0.7645|0.2856||densenet121, 2nd|
-|157||||densenet121, 3rd|
 |158|0.7768|0.4096||efficientnet_b0, 1st|
 |158|0.7567|0.3217||efficientnet_b0, 2nd|
 |158|0.8964|0.2153|0.857|efficientnet_b0, 3rd|
 |161|0.9691|0.427|0.922|勾配累積|
 |162|0.9663|0.3636||Cycle Pseudo|
-|162||||Cycle Pseudo, bugfix|
-|163||||pos loss weight|
-|164||||cut image|
+|163|0.9590|0.5667||pos loss weight|
+|154|0.7621|0.315||efficientnet_b0, 2nd, 3 epoch|
 |165||||cut image|
 
 ### Done
