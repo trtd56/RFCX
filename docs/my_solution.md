@@ -7,6 +7,7 @@
 ### Backlog
 
 - cut imageを1st
+- 勾配累積でbs=64に
 - その他の外部データのPseudoLabeling
 - 一般的な改善手法
   - TTA
@@ -25,11 +26,17 @@
 |162|0.9663|0.3636|0.914|Cycle Pseudo|
 |163|0.9590|0.5667|0.937|pos loss weight|
 |164|0.7621|0.315||efficientnet_b0, 2nd, 8 epoch|
-|164||||efficientnet_b0, 3rd, use resnet pseudo|
+|164|0.8753|0.8768||efficientnet_b0, 3rd, use resnet pseudo|
 |165|not good|not good|X|pos loss weight, alpha_min|
 |166||||densenet121, 3rd, use resnet pseudo|
-|167||||pos loss weight, mixup_last|
+|167|0.9589|0.657|0.942|pos loss weight, mixup_last|
+|168||||efficientnet_b0 mixup_last|
+
+
+|168||||pos loss weight, |
 |168||||pos loss weight, 勾配累積|
+
+exp0117
 
 ### Done
 
