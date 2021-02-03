@@ -70,3 +70,16 @@ class RFCXNet(nn.Module):
 ```
 
 ### 実験結果
+
+#### pseudo0.9 + Focal
+
+|mixup type|CV|Precision|LB|
+|--|--|--|--|
+|従来|0.9392|0.4406|0.912|
+|last layer|0.9434|0.4375|0.907|
+
+
+|mixup type|CV|Precision|LB|
+|--|--|--|--|
+|従来|0.9663|0.3636|0.914|
+|last layer|0.9589|0.657|0.942|
