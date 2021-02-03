@@ -71,6 +71,30 @@ class RFCXNet(nn.Module):
 
 ### 実験結果
 
+#### 旧実験(Precisionは測ってない)
+学習方法は1st stage
+
+- 学習の中でpseudo labelingしてるらへん
+
+|mixup type|CV|LB|
+|--|--|--|
+|従来|0.8399|0.831|
+|last layer|0.8391|0.805|
+
+- negativeデータをサンプリングして追加してるらへん
+
+|mixup type|CV|LB|
+|--|--|--|
+|従来|0.8352|0.833|
+|last layer|0.8287|0.828|
+
+- 画像の分割方法を工夫してるらへん
+
+|mixup type|CV|LB|
+|--|--|--|
+|従来|0.8347|0.792|
+|last layer|0.8368|0.792|
+
 #### pseudo0.9 + Focal
 
 |mixup type|CV|Precision|LB|
