@@ -28,7 +28,8 @@
 |164||||efficientnet_b0, 3rd, use resnet pseudo|
 |165||||pos loss weight, alpha_min|
 |166||||densenet121, 3rd, use resnet pseudo|
-|167||||pos loss weight, alpha_min, 勾配累積|
+|167||||pos loss weight, mixup_last|
+|168||||pos loss weight, 勾配累積|
 
 ### Done
 
