@@ -38,6 +38,7 @@
 
 - もう一回Resnet学習して出力分布を確認
 - Resnetで勾配累積
+- min_max scaling
 
 
 ### Done
