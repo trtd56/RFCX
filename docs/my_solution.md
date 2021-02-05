@@ -37,6 +37,11 @@
 |180|0.9693|0.9590||resnet18, 勾配累積の利用|
 |181||||resnet18, cycle3|
 
+- ViT
+- CBAM
+- timmの他のモデル
+- add gamma noise
+
 #### アンサンブル
 順当に行く場合
 - reset18, densenet121, efficientnet_b0, resnest50
