@@ -34,7 +34,7 @@
 |170|not good|not good|X|MobileNet|
 |177|X|X|X|densenet121, lr=5e-4|
 |178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
-|180||||resnet18, 勾配累積の利用|
+|180|0.9693|0.9590||resnet18, 勾配累積の利用|
 
 #### アンサンブル
 順当に行く場合
