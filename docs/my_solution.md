@@ -36,6 +36,10 @@
 |177||||densenet121, lr=5e-4|
 |178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
 
+- もう一回Resnet学習して出力分布を確認
+- Resnetで勾配累積
+
+
 ### Done
 
 - 3rd stage (pseudoはpositive onlyが良さそう)
