@@ -7,7 +7,6 @@
 ### Backlog
 
 - cut imageを1st
-- 勾配累積でbs=64に
 - その他の外部データのPseudoLabeling
 - 一般的な改善手法
   - TTA
@@ -33,12 +32,16 @@
 |168|0.8897|0.8748|0.922|efficientnet_b0 mixup_last|
 |169|0.9397|0.8985|0.935|exp0117の重みを使ってResnest|
 |170|not good|not good|X|MobileNet|
-|177||||densenet121, lr=5e-4|
+|177|X|X|X|densenet121, lr=5e-4|
 |178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
+|180||||resnet18, 勾配累積の利用|
 
-- もう一回Resnet学習して出力分布を確認
-- Resnetで勾配累積
-- min_max scaling
+#### アンサンブル
+順当に行く場合
+- reset18, densenet121, efficientnet_b0, resnest50
+- reset18, densenet121, efficientnet_b0(ベース強化), resnest50
+- reset18, densenet121, efficientnet_b0(ベース強化), resnest50, きょうへいさんのモデル
+- stacking
 
 
 ### Done
