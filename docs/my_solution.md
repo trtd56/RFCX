@@ -31,8 +31,10 @@
 |166|0.9392|0.8706|0.926|densenet121, 3rd, use resnet pseudo|
 |167|0.9589|0.657|0.942|pos loss weight, mixup_last|
 |168|0.8897|0.8748|0.922|efficientnet_b0 mixup_last|
-|169|0.9397|0.8985||exp0117の重みを使ってResnest|
-|170||||MobileNet|
+|169|0.9397|0.8985|0.935|exp0117の重みを使ってResnest|
+|170|not good|not good|X|MobileNet|
+|177||||densenet121, lr=5e-4|
+|178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
 
 ### Done
 
