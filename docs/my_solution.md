@@ -36,9 +36,10 @@
 |178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
 |180|0.9693|0.9590|0.936|resnet18, 勾配累積の利用|
 |181|0.9451|0.7991|0.921|resnet18, cycle3|
+|182|0.9657|0.9665||resnet18, CBAM|
+
 
 - ViT
-- CBAM
 - timmの他のモデル
 - add gamma noise
 
