@@ -34,8 +34,8 @@
 |170|not good|not good|X|MobileNet|
 |177|X|X|X|densenet121, lr=5e-4|
 |178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
-|180|0.9693|0.9590||resnet18, 勾配累積の利用|
-|181||||resnet18, cycle3|
+|180|0.9693|0.9590|0.936|resnet18, 勾配累積の利用|
+|181|0.9451|0.7991||resnet18, cycle3|
 
 - ViT
 - CBAM
@@ -44,7 +44,7 @@
 
 #### アンサンブル
 順当に行く場合
-- reset18, densenet121, efficientnet_b0, resnest50
+- reset18, densenet121, efficientnet_b0, resnest50: 0.936
 - reset18, densenet121, efficientnet_b0(ベース強化), resnest50
 - reset18, densenet121, efficientnet_b0(ベース強化), resnest50, きょうへいさんのモデル
 - stacking
