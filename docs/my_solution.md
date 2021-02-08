@@ -15,12 +15,12 @@
 
 ### Doing
 
-|exp|CV|Prec|LB|memo|
-|--|--|--|--|--|
-|184||||smoothing=0.45|
-|185||||label weight|
-|186||||pseudo only|
-|187||||add gamma noise|
+|exp|CV|Prec|Recall|LB|memo|
+|--|--|--|--|--|--|
+|184|||||smoothing=0.45|
+|185|||||label weight|
+|186|||||pseudo only|
+|187|||||add gamma noise|
 
 
 #### アンサンブル
