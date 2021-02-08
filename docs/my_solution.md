@@ -17,7 +17,7 @@
 
 |exp|CV|Prec|Recall|LB|memo|
 |--|--|--|--|--|--|
-|184|||||smoothing=0.45|
+|184|0.936|0.9529|0.7057|0.936|smoothing=0.45|
 |185|||||label weight|
 |186|||||pseudo only|
 |187|||||add gamma noise|
