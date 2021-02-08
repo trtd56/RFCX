@@ -6,7 +6,7 @@ I train by google colab using [Theo Viel's npz dataset](https://www.kaggle.com/c
 The dataset can be regarded as 128x3751 size image.
 
 I set the window size to 512 and cut out the entire range of 60's audio data by covering it little by little.
-
+Cover 49 pixels each, considering that important sounds are located at the boundaries of the division.
 ```python
 N_SPLIT_IMG = 8
 WINDOW = 512
@@ -22,6 +22,14 @@ for idx in range(1, N_SPLIT_IMG):
 print(slide_img_pos)
 # [[0, 512], [463, 975], [926, 1438], [1389, 1901], [1852, 2364], [2315, 2827], [2778, 3290], [3241, 3753]]
 ```
+
+We can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=16, WINDOW=256, and COVER=23 but not good.
+
+
+|WINDOW|model|lwlap|precision|recall|LB|memo|
+|--|--|--|--|--|--|--|
+|512|resnet18|0.9693|0.9590|0.7336|0.936|my best single model|
+|256|resnet18|0.9457|0.5744|0.08893|0.921|↑same method other than split size|
 
 
 soft frame wise prediction.
