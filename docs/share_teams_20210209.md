@@ -5,8 +5,23 @@
 I train by google colab using [Theo Viel's npz dataset](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/198048)(32 kHz, 128 mels), because I don't have GPU machine and enough monery to rent Cloud machine.
 The dataset can be regarded as 128x3751 size image.
 
+I set the window size to 512 and cut out the entire range of 60's audio data by covering it little by little.
 
-Cut out the entire range of audio data by covering it little by little
+```python
+N_SPLIT_IMG = 8
+WINDOW = 512
+COVER = 49
+
+slide_img_pos = [[0, WINDOW]]
+for idx in range(1, N_SPLIT_IMG):
+    h, t = slide_img_pos[idx-1][0], slide_img_pos[idx-1][1]
+    h = t - COVER
+    t = h + WINDOW
+    slide_img_pos.append([h, t])
+
+print(slide_img_pos)
+# [[0, 512], [463, 975], [926, 1438], [1389, 1901], [1852, 2364], [2315, 2827], [2778, 3290], [3241, 3753]]
+```
 
 
 soft frame wise prediction.
