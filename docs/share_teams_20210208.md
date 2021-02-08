@@ -6,16 +6,18 @@
 
 |model|lwlap|preci|recall|LB|memo|Drive|
 |--|--|--|--|--|--|--|
-|resnet18|||||現状SingleでBESTだが、出力値が低い||
-|resnet18|||||現状ベストプラクティス||
-|resnet18|||||windowサイズ256だが、勾配累積を使っていないので出力値が低い||
-|resnest50|||||現状ベストプラクティス||
-|densener121|||||現状ベストプラクティス||
-|efficientnet_b0|||||現状ベストプラクティス||
-|efficientnet_b0|||||↑のパラメータ調整||
+|resnet18|0.9589|0.657||0.942|現状SingleでBESTだが、出力値が低い||
+|resnet18|0.9693|0.9590||0.936|現状ベストプラクティス||
+|resnet18|0.9457|0.5744||0.921|windowサイズ256だが、勾配累積を使っていないので出力値が低い||
+|resnest50|0.9397|0.8985||0.935|現状ベストプラクティス||
+|densener121|0.9392|0.8706||0.926|現状ベストプラクティス||
+|efficientnet_b0|0.8897|0.8748||0.922|現状ベストプラクティス||
+|efficientnet_b0|0.9002|0.8758|||↑のパラメータ調整||
 
-現状ベストプラクティス
-- 明確にラベルが付いていないlossを計算しないのとpseudo labelingのcycle
-- 勾配累積
-- mixup lastlayer
-- positive lossをバッチの中で重み減衰
+- submitしていなかったり、実装が間に合わずスコアを計算していないものもある
+- precision/recallは閾値0.5で計算している
+- 現状ベストプラクティス
+  - 明確にラベルが付いていないlossを計算しないのとpseudo labelingのcycle
+  - 勾配累積
+  - mixup lastlayer
+  - positive lossをバッチの中で重み減衰
