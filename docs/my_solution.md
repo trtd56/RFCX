@@ -17,30 +17,6 @@
 
 |exp|CV|Prec|LB|memo|
 |--|--|--|--|--|
-|157|0.7862|0.3907||densenet121, 1st|
-|157|0.7645|0.2856||densenet121, 2nd|
-|158|0.7768|0.4096||efficientnet_b0, 1st|
-|158|0.7567|0.3217||efficientnet_b0, 2nd|
-|158|0.8964|0.2153|0.857|efficientnet_b0, 3rd|
-|161|0.9691|0.427|0.922|勾配累積|
-|162|0.9663|0.3636|0.914|Cycle Pseudo|
-|163|0.9590|0.5667|0.937|pos loss weight|
-|164|0.7621|0.315||efficientnet_b0, 2nd, 8 epoch|
-|164|0.8753|0.8768||efficientnet_b0, 3rd, use resnet pseudo|
-|165|not good|not good|X|pos loss weight, alpha_min|
-|166|0.9392|0.8706|0.926|densenet121, 3rd, use resnet pseudo|
-|167|0.9589|0.657|0.942|pos loss weight, mixup_last|
-|168|0.8897|0.8748|0.922|efficientnet_b0 mixup_last|
-|169|0.9397|0.8985|0.935|exp0117の重みを使ってResnest|
-|170|not good|not good|X|MobileNet|
-|177|X|X|X|densenet121, lr=5e-4|
-|178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
-|180|0.9693|0.9590|0.936|resnet18, 勾配累積の利用|
-|181|0.9451|0.7991|0.921|resnet18, cycle3|
-|182|0.9657|0.9665||resnet18, CBAM|
-|183|0.8063|0.3094||2nd, w256|
-|183|0.964|0.3418|0.919|3rd, w256|
-|183|0.9457|0.5744|0.921|4th, w256|
 |184||||smoothing=0.45|
 |185||||label weight|
 |186||||pseudo only|
@@ -145,3 +121,41 @@ ResNet18で実験(Trust LB)
 |156|0.9437|0.3393|0.900|songtype_idの考慮3rd, 計算修正|
 |156|0.8516|0.4007|0.825|songtype_idの考慮4th, 計算修正|
 |156|0.9560|0.3963|0.829|songtype_idの考慮5th, 計算修正|
+
+
+### アンサンブルの種づくり
+|exp|CV|Prec|LB|memo|
+|--|--|--|--|--|
+|157|0.7862|0.3907||densenet121, 1st|
+|157|0.7645|0.2856||densenet121, 2nd|
+|158|0.7768|0.4096||efficientnet_b0, 1st|
+|158|0.7567|0.3217||efficientnet_b0, 2nd|
+|158|0.8964|0.2153|0.857|efficientnet_b0, 3rd|
+|164|0.7621|0.315||efficientnet_b0, 2nd, 8 epoch|
+|164|0.8753|0.8768||efficientnet_b0, 3rd, use resnet pseudo|
+|166|0.9392|0.8706|0.926|densenet121, 3rd, use resnet pseudo|
+|168|0.8897|0.8748|0.922|efficientnet_b0 mixup_last|
+|170|not good|not good|X|MobileNet|
+|177|X|X|X|densenet121, lr=5e-4|
+|178|0.9002|0.8758||efficientnet_b0, lr=5e-4|
+
+### windowサイズの変更
+|exp|CV|Prec|LB|memo|
+|--|--|--|--|--|
+|183|0.8063|0.3094||2nd, w256|
+|183|0.964|0.3418|0.919|3rd, w256|
+|183|0.9457|0.5744|0.921|4th, w256|
+
+### モデルのベース改善
+
+|exp|CV|Prec|LB|memo|
+|--|--|--|--|--|
+|161|0.9691|0.427|0.922|勾配累積|
+|162|0.9663|0.3636|0.914|Cycle Pseudo|
+|163|0.9590|0.5667|0.937|pos loss weight|
+|165|not good|not good|X|pos loss weight, alpha_min|
+|167|0.9589|0.657|0.942|pos loss weight, mixup_last|
+|169|0.9397|0.8985|0.935|exp0117の重みを使ってResnest|
+|180|0.9693|0.9590|0.936|resnet18, 勾配累積の利用|
+|181|0.9451|0.7991|0.921|resnet18, cycle3|
+|182|0.9657|0.9665||resnet18, CBAM|
