@@ -24,9 +24,10 @@ print(slide_img_pos)
 ```
 
 I train and predict those images which cut by 128x512.
-soft frame wise prediction.
 
+### training phase
 
+Images were cut and padded to train by batch.
 
 ```python
 def split_and_padding(X, y):
@@ -47,12 +48,19 @@ def split_and_padding(X, y):
     y = torch.cat(y_lst, axis=0)
     return X, y
 
-# training phase
 for X, y in train_data_loader:
-    # X shape is (), y shape is ()
+    # X shape is (2, 3, 128, 3751) bs, channel, image_height, image_width
+    # y shape is (2, 24, 3751) bs, label, sequence
     X, y = split_and_padding(X, y)
-    # X shape is (), y shape is () 
+    # X shape is (16, 3, 128, 512
+    # y shape is (16, 24, 512) 
+```
 
+### prediction phase
+
+soft frame wise prediction.
+
+```python
 # prediction phase
 for X, _ in test_data_loader:
     preds = []
@@ -64,6 +72,8 @@ for X, _ in test_data_loader:
     max_pred, _  = torch.max(torch.stack(preds), dim=0)
 ```
 
+
+### cycle re-labeing
 
 ---
 
@@ -83,29 +93,7 @@ By the way, we can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=
 
 
 
----
-I use 
+## A different approach from kudo
 
-1st stage
-- I think it is pre-train.
-- detect sound exist point from t_max and t_min, and cut image (3, 128, 512)
-- use original label
-- sampling 30 data from fp_train on each epochs(they are np.zero(24))
 
-2nd stage
-- load the model weight which was trained 1st stage
-- use all data(tp_train, fp_train)
-- cut out the entire range of audio data by covering it little by little
-- calculate loss only those labeled in tp_train and fp_train
 
-3rd stage
-- same with 2nd stage
-- re-labeling by 2nd stage model
-
-4th stage
-- same with 2nd stage
-- re-labeling by 3rd stage model
-
-I tried the 5th stage(re-labeling by the 4th stage model), but the result was not good.
-
-Share about split the audio
