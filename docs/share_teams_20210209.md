@@ -193,7 +193,11 @@ https://github.com/trtd56/RFCX/blob/main/work/RFCX_re_labeling_by_resnet18.ipynb
 re-labeling model:  
 https://drive.google.com/drive/u/1/folders/1ZAiBYUrluhwqeCcsv8aDq4gNuErv4pXt  
 each prediction resule:  
+https://drive.google.com/drive/folders/1PYAtx9rxgk6tTVt467zcj_BsWLhIVo4v?usp=sharing
 
+I prepared two type pseudo labels clipwise and framewise. We use clipwise label now.
+- clipwise label shape is (5090, 8, 24): data, soft-frame, label
+- framewise label shape is (5090, 8, 24, 512): data, soft-frame, label, pixcel
 
 ## A different approach from kudo
 
