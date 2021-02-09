@@ -168,6 +168,8 @@ I imporove label by repeat re-labeling and training.
 - 2nd-2. train from original tp_train.csv, fp_train.csv and the label which put by 2nd-1 model  
 - 2nd-3. train from original tp_train.csv, fp_train.csv and the label which put by 2nd-2 model 
 
+I tried it the 4th time(2nd-4), but it's not good.
+
 ---
 
 
@@ -180,3 +182,6 @@ I imporove label by repeat re-labeling and training.
 
 ### loss
 
+
+Don't work for me
+zero loss is using other label.(It is ambiguous Labels)
