@@ -85,21 +85,25 @@ My model has two output, clipwise_output and framewise_output.
 I use clipwise_output in training, and I use framewise_output in prediction.
 This aproach came from [hinmura0's discussion thread](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684).
 
-### cycle re-labeing
-
----
-
-
 
 ---
 
 By the way, we can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=16, WINDOW=256, and COVER=23 but not good.
 
-
 |WINDOW|model|lwlap|precision|recall|LB|memo|
 |--|--|--|--|--|--|--|
 |512|resnet18|0.9693|0.9590|0.7336|0.936|my best single model|
 |256|resnet18|0.9457|0.5744|0.08893|0.921|↑same method other than split size|
+
+## 2nd stage: cycle re-labeing
+
+
+
+
+
+---
+
+
 
 
 
