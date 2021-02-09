@@ -106,7 +106,7 @@ By the way, we can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=
 |512|resnet18|0.9693|0.9590|0.7336|0.936|my best single model|
 |256|resnet18|0.9457|0.5744|0.08893|0.921|↑same method other than split size|
 
-## 2nd stage: cycle re-labeing
+## 2nd stage
 
 The purpose of stage2 is to improve model and make pseudo label by this model.
 
@@ -160,6 +160,9 @@ def rfcx_2nd_criterion(outputs, targets):
     return loss
 ```
 
+### cycle re-labeing
+
+
 ---
 
 
@@ -168,5 +171,7 @@ def rfcx_2nd_criterion(outputs, targets):
 
 ## A different approach from kudo
 
+### CV
 
+### loss
 
