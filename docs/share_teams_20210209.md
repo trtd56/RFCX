@@ -188,9 +188,10 @@ I predict each `slide_img_pos` and put the pseudo label, so I got 8 labels in on
 I use pseudo positive label only now.
 The pseudo negative label did not work for me.
 
-my re-labeling code is here:
-
-each prediction
+my re-labeling code is here:  
+https://github.com/trtd56/RFCX/blob/main/work/RFCX_re_labeling_by_resnet18.ipynb  
+each prediction resule is here:  
+hogehoge
 
 ## A different approach from kudo
 
