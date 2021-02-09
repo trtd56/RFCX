@@ -164,10 +164,9 @@ def rfcx_2nd_criterion(outputs, targets):
 
 I imporove label by repeat re-labeling and training.
 
-
-1. train original label
-2. train original label and re-label from 1 model 
-3. train original label and re-label from 2 model 
+- 2nd-1. train from original tp_train.csv and fp_train.csv
+- 2nd-2. train from original tp_train.csv, fp_train.csv and the label which put by 2nd-1 model  
+- 2nd-3. train from original tp_train.csv, fp_train.csv and the label which put by 2nd-2 model 
 
 ---
 
