@@ -168,6 +168,12 @@ I predict each `slide_img_pos` and put the pseudo label, so I got 8 labels in on
 - Negative label `-1` when 3 or more 5-fold models are predicted to be NEGATIVE_THRESHOLD or more.
 - Other than the above `0`
 
+I use pseudo positive label only now.
+The pseudo negative label did not work for me.
+
+my re-labeling code is here:
+
+
 ### cycle re-labeing
 
 I imporove label by repeat re-labeling and training.
@@ -183,6 +189,7 @@ dataset:
 https://github.com/trtd56/RFCX/blob/main/dataset/exp0153_resnet18_focal_mixup_pseudo0.5_thr0.5.pkl  
 how to use(sorry, it is written Japanese):  
 https://github.com/trtd56/RFCX/blob/main/work/RFCX_PseudoLabel_HowToUse.ipynb  
+
 
 ---
 
