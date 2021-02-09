@@ -132,6 +132,8 @@ fname = "00204008d" + "_nega"
 nega_label, nega_middle = extract_seq_label(fp_dict[fname], -1) 
 ```
 
+And, loss function is that:
+
 ```python
 def rfcx_2nd_criterion(outputs, targets):
     clipwise_preds_att_ti = outputs["clipwise_preds_att_ti"]
