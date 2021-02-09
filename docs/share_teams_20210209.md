@@ -202,6 +202,9 @@ each prediction
 
 ### CV
 
+I use [iterative-stratification](https://github.com/trent-b/iterative-stratification)'s MultilabelStratifiedKFold and random seed is 416.
+Validation data is made from tp_train only and fp_train data is used training in all fold.
+
 ```python
 N_LABEL = 24
 SEED = 416
