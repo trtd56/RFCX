@@ -23,7 +23,57 @@ print(slide_img_pos)
 # [[0, 512], [463, 975], [926, 1438], [1389, 1901], [1852, 2364], [2315, 2827], [2778, 3290], [3241, 3753]]
 ```
 
-We can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=16, WINDOW=256, and COVER=23 but not good.
+I train and predict those images which cut by 128x512.
+soft frame wise prediction.
+
+
+
+```python
+def split_and_padding(X, y):
+    x_lst = []
+    y_lst = []
+    for h, t in slide_img_pos:
+        _X = X[:, :, :, h:t]
+        _y = y[:, :, h:t]
+        if _X.shape[3] != WINDOW:
+            x_pad = torch.zeros(list(_X.shape[:-1]) + [WINDOW - _X.shape[3]])
+            _X = torch.cat([_X, x_pad], axis=3)
+            y_pad = torch.zeros(list(_y.shape[:-1]) + [WINDOW - _y.shape[2]])
+            _y = torch.cat([_y, y_pad], axis=2)
+        x_lst.append(_X)
+        y_lst.append(_y)
+    
+    X = torch.cat(x_lst, axis=0)
+    y = torch.cat(y_lst, axis=0)
+    return X, y
+
+# training phase
+for X, y in train_data_loader:
+    # X shape is (), y shape is ()
+    X, y = split_and_padding(X, y)
+    # X shape is (), y shape is () 
+
+# prediction phase
+for X, _ in test_data_loader:
+    preds = []
+    for h, t in slide_img_pos:
+        with torch.no_grad():
+            outputs = model(X[:,:,:,h:t])
+        pred, _ = outputs["segmentwise_output_ti"].sigmoid().max(2)
+        preds.append(pred)
+    max_pred, _  = torch.max(torch.stack(preds), dim=0)
+```
+
+
+---
+
+My model has two output, clipwise_output and framewise_output.
+I use clipwise_output in training, and I use framewise_output in prediction.
+This aproach came from [hinmura0's discussion thread](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684).
+
+---
+
+By the way, we can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=16, WINDOW=256, and COVER=23 but not good.
 
 
 |WINDOW|model|lwlap|precision|recall|LB|memo|
@@ -32,7 +82,6 @@ We can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=16, WINDOW=2
 |256|resnet18|0.9457|0.5744|0.08893|0.921|↑same method other than split size|
 
 
-soft frame wise prediction.
 
 ---
 I use 
