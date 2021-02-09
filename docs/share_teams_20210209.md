@@ -232,6 +232,8 @@ for fold, (train_index, valid_index) in enumerate(mskf.split(tp_fnames, tp_label
       .
 ```
 
+I think this strategy is not good because tp_train and fp_train include duplicate files.
+
 ### loss
 
 
