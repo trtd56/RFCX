@@ -226,8 +226,6 @@ for fold, (train_index, valid_index) in enumerate(mskf.split(tp_fnames, tp_label
       .
 ```
 
-I think this strategy is not good because tp_train and fp_train include duplicate files.
-
 ### loss function
 
 
@@ -241,3 +239,9 @@ I use positive loss decay.
 ```
 
 I don't use kudo's zero loss method for ambiguous labels.
+
+## Part to be improved
+- re-labeling strategy
+  - now 
+- CV strategy
+  - I think now strategy is not good because tp_train and fp_train include duplicate files.
