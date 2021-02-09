@@ -160,6 +160,14 @@ def rfcx_2nd_criterion(outputs, targets):
     return loss
 ```
 
+### re-labelig
+
+I predict each `slide_img_pos` and put the pseudo label, so I got 8 labels in one 60's file.
+
+- Positive label `1` when 3 or more 5-fold models are predicted to be POSITIVE_THRESHOLD or more.
+- Negative label `-1` when 3 or more 5-fold models are predicted to be NEGATIVE_THRESHOLD or more.
+- Other than the above `0`
+
 ### cycle re-labeing
 
 I imporove label by repeat re-labeling and training.
@@ -170,12 +178,11 @@ I imporove label by repeat re-labeling and training.
 
 I tried it the 4th time(2nd-4), but it's not good.
 
-I shared 2nd-3 labels to kuto. 
+I shared `2nd-3` labels to kuto.  
+dataset:  
+https://github.com/trtd56/RFCX/blob/main/dataset/exp0153_resnet18_focal_mixup_pseudo0.5_thr0.5.pkl  
 how to use(sorry, it is written Japanese):  
 https://github.com/trtd56/RFCX/blob/main/work/RFCX_PseudoLabel_HowToUse.ipynb  
-dataset:  
-https://github.com/trtd56/RFCX/blob/main/dataset/exp0153_resnet18_focal_mixup_pseudo0.5_thr0.5.pkl
-
 
 ---
 
