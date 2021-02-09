@@ -170,6 +170,13 @@ I imporove label by repeat re-labeling and training.
 
 I tried it the 4th time(2nd-4), but it's not good.
 
+I shared 2nd-3 labels to kuto. 
+how to use(sorry, it is written Japanese):  
+https://github.com/trtd56/RFCX/blob/main/work/RFCX_PseudoLabel_HowToUse.ipynb  
+dataset:  
+https://github.com/trtd56/RFCX/blob/main/dataset/exp0153_resnet18_focal_mixup_pseudo0.5_thr0.5.pkl
+
+
 ---
 
 
