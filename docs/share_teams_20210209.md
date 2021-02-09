@@ -160,20 +160,6 @@ def rfcx_2nd_criterion(outputs, targets):
     return loss
 ```
 
-### re-labelig
-
-I predict each `slide_img_pos` and put the pseudo label, so I got 8 labels in one 60's file.
-
-- Positive label `1` when 3 or more 5-fold models are predicted to be POSITIVE_THRESHOLD or more.
-- Negative label `-1` when 3 or more 5-fold models are predicted to be NEGATIVE_THRESHOLD or more.
-- Other than the above `0`
-
-I use pseudo positive label only now.
-The pseudo negative label did not work for me.
-
-my re-labeling code is here:
-
-
 ### cycle re-labeing
 
 I imporove label by repeat re-labeling and training.
@@ -191,6 +177,21 @@ how to use(sorry, it is written Japanese):
 https://github.com/trtd56/RFCX/blob/main/work/RFCX_PseudoLabel_HowToUse.ipynb  
 
 
+#### re-labelig
+
+I predict each `slide_img_pos` and put the pseudo label, so I got 8 labels in one 60's file.
+
+- Positive label `1` when 3 or more 5-fold models are predicted to be POSITIVE_THRESHOLD or more.
+- Negative label `-1` when 3 or more 5-fold models are predicted to be NEGATIVE_THRESHOLD or more.
+- Other than the above `0`
+
+I use pseudo positive label only now.
+The pseudo negative label did not work for me.
+
+my re-labeling code is here:
+
+each prediction
+
 ---
 
 
@@ -200,6 +201,33 @@ https://github.com/trtd56/RFCX/blob/main/work/RFCX_PseudoLabel_HowToUse.ipynb
 ## A different approach from kudo
 
 ### CV
+
+```python
+N_LABEL = 24
+SEED = 416
+
+tp_fnames, tp_labels = [], []
+for recording_id, df in train_tp.groupby("recording_id"):
+    v = sum([np.eye(N_LABEL)[i] for i in df["species_id"].tolist()])
+    v = (v  == 1).astype(int).tolist()
+    tp_fnames.append(recording_id+"_posi")
+    tp_labels.append(v)
+
+fp_fnames, fp_labels = [], []
+for recording_id, df in train_fp.groupby("recording_id"):
+    v = sum([np.eye(N_LABEL)[i] for i in df["species_id"].tolist()])
+    v = (v  == 1).astype(int).tolist()
+    fp_fnames.append(recording_id+"_nega")
+    fp_labels.append(v)
+    
+mskf = MultilabelStratifiedKFold(n_splits=5, shuffle=True, random_state=SEED)
+for fold, (train_index, valid_index) in enumerate(mskf.split(tp_fnames, tp_labels)):
+    train_fname = np.array(tp_fnames)[train_index].tolist() + fp_fnames
+    valid_fname = np.array(tp_fnames)[valid_index].tolist()
+      .
+      .
+      .
+```
 
 ### loss
 
