@@ -188,9 +188,16 @@ I predict each `slide_img_pos` and put the pseudo label, so I got 8 labels in on
 I use pseudo positive label only now.
 The pseudo negative label did not work for me.
 
-my re-labeling code is here:
+re-labeling code:  
+https://github.com/trtd56/RFCX/blob/main/work/RFCX_re_labeling_by_resnet18.ipynb  
+re-labeling model:  
+https://drive.google.com/drive/u/1/folders/1ZAiBYUrluhwqeCcsv8aDq4gNuErv4pXt  
+each prediction resule(**The pseudolabel file before threshold**):  
+https://drive.google.com/drive/folders/1PYAtx9rxgk6tTVt467zcj_BsWLhIVo4v?usp=sharing
 
-each prediction
+I prepared two type pseudo labels clipwise and framewise. We use clipwise label now.
+- clipwise label shape is (5090, 8, 24): data, soft-frame, label
+- framewise label shape is (5090, 8, 24, 512): data, soft-frame, label, pixcel
 
 ## A different approach from kudo
 
@@ -241,7 +248,7 @@ I use positive loss decay.
 I don't use kudo's zero loss method for ambiguous labels.
 
 ## Part to be improved
-- re-labeling strategy
-  - now 
+- re-labeling fold
+  - I'm using the voting for 5-fold models when I put pseudo labels. However, each model also predicts pseudo labels for trained data.
 - CV strategy
   - I think now strategy is not good because tp_train and fp_train include duplicate files.
