@@ -136,7 +136,7 @@ def extract_seq_label(label, value):
 
 # extract positive label and middle point
 fname = "00204008d" + "_posi"
-posi_label, posi_middle = extract_seq_label(tp_dict[fname+], 1) 
+posi_label, posi_middle = extract_seq_label(tp_dict[fname], 1) 
 
 # extract negative label and middle point
 fname = "00204008d" + "_nega"
