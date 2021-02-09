@@ -64,7 +64,7 @@ for X, y in train_data_loader:
 
 ### prediction phase
 
-
+I predict each sliding window and extract max-pooling in the frame.
 I call this soft frame-wise prediction.
 
 ```python
