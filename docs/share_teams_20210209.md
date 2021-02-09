@@ -97,9 +97,55 @@ By the way, we can change this N_SPLIT_IMG, WINDOW, COVER. I tried  N_SPLIT_IMG=
 
 ## 2nd stage: cycle re-labeing
 
+The purpose of stage2 is to improve model and make pseudo label by this model.
+
+The key point I think is to calculate gradient loss only labeled frame.
+The positive label was trained from tp_train.csv only and the negative label was trained from fp_train.csv only.  
+I put `1` to positive label and `-1` to negative label.
 
 
+```python
+tp_dict = {}
+for recording_id, df in train_tp.groupby("recording_id"):
+    tp_dict[recording_id+"_posi"] = df.values[:, [1,3,4,5,6]]
 
+fp_dict = {}
+for recording_id, df in train_fp.groupby("recording_id"):
+    fp_dict[recording_id+"_nega"] = df.values[:, [1,3,4,5,6]]
+    
+def extract_seq_label(label, value):
+    seq_label = np.zeros((24, 3751))  # label, sequence
+    middle = np.ones(24) * -1
+    for species_id, t_min, f_min, t_max, f_max in label:
+        h, t = int(3751*(t_min/60)), int(3751*(t_max/60))
+        m = (t + h)//2
+        middle[species_id] = m
+        seq_label[species_id, h:t] = value
+    return seq_label, middle.astype(int)
+
+# extract positive label and middle point
+fname = "00204008d" + "_posi"
+posi_label, posi_middle = extract_seq_label(tp_dict[fname+], 1) 
+
+# extract negative label and middle point
+fname = "00204008d" + "_nega"
+nega_label, nega_middle = extract_seq_label(fp_dict[fname], -1) 
+```
+
+```python
+def rfcx_2nd_criterion(outputs, targets):
+    clipwise_preds_att_ti = outputs["clipwise_preds_att_ti"]
+    posi_label = ((targets == 1).sum(2) > 0).float().to(device)
+    nega_label = ((targets == -1).sum(2) > 0).float().to(device)
+    posi_y = torch.ones(clipwise_preds_att_ti.shape).to(device)
+    nega_y = torch.zeros(clipwise_preds_att_ti.shape).to(device)
+    posi_loss = nn.BCEWithLogitsLoss(reduction="none")(clipwise_preds_att_ti, posi_y)
+    nega_loss = nn.BCEWithLogitsLoss(reduction="none")(clipwise_preds_att_ti, nega_y)
+    posi_loss = (posi_loss * posi_label).sum()
+    nega_loss = (nega_loss * nega_label).sum()
+    loss = posi_loss + nega_loss
+    return loss
+```
 
 ---
 
