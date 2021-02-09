@@ -49,37 +49,47 @@ def split_and_padding(X, y):
     return X, y
 
 for X, y in train_data_loader:
-    # X shape is (2, 3, 128, 3751) bs, channel, image_height, image_width
-    # y shape is (2, 24, 3751) bs, label, sequence
+    # X shape is (2, 3, 128, 3751) batch_size, channel, image_height, image_width
+    # y shape is (2, 24, 3751) batch_size, label, sequence
     X, y = split_and_padding(X, y)
-    # X shape is (16, 3, 128, 512
+    # X shape is (16, 3, 128, 512)
     # y shape is (16, 24, 512) 
+    
+    outouts = model(X)
+    loss = loss_fn(outouts, y)
+      .
+      .
+      .
 ```
 
 ### prediction phase
 
-soft frame wise prediction.
+
+I call this soft frame-wise prediction.
 
 ```python
-# prediction phase
 for X, _ in test_data_loader:
     preds = []
     for h, t in slide_img_pos:
         with torch.no_grad():
             outputs = model(X[:,:,:,h:t])
-        pred, _ = outputs["segmentwise_output_ti"].sigmoid().max(2)
-        preds.append(pred)
-    max_pred, _  = torch.max(torch.stack(preds), dim=0)
+        _p, _ = outputs["segmentwise_output_ti"].sigmoid().max(2)
+        preds.append(_p)
+    test_pred, _  = torch.max(torch.stack(preds), dim=0)
+      .
+      .
+      .
 ```
 
+My model has two output, clipwise_output and framewise_output.
+I use clipwise_output in training, and I use framewise_output in prediction.
+This aproach came from [hinmura0's discussion thread](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684).
 
 ### cycle re-labeing
 
 ---
 
-My model has two output, clipwise_output and framewise_output.
-I use clipwise_output in training, and I use framewise_output in prediction.
-This aproach came from [hinmura0's discussion thread](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684).
+
 
 ---
 
