@@ -25,6 +25,17 @@ print(slide_img_pos)
 
 I train and predict those images which cut by 128x512.
 
+|idx|pixcel|time(s)|
+|--|--|--|
+|0|0〜512|0〜8|
+|1|463〜975|7〜15|
+|2|926〜1438|14〜23|
+|3|1389〜1901|22〜30|
+|4|1852〜2364|29〜37|
+|5|2315〜2827|37〜45|
+|6|2778〜3290|44〜52|
+|7|3241〜3753|51〜60|
+
 ### training phase
 
 Images were cut and padded to train by batch.
