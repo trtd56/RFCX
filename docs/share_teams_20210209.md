@@ -162,6 +162,12 @@ def rfcx_2nd_criterion(outputs, targets):
 
 ### cycle re-labeing
 
+I imporove label by repeat re-labeling and training.
+
+
+1. train original label
+2. train original label and re-label from 1 model 
+3. train original label and re-label from 2 model 
 
 ---
 
