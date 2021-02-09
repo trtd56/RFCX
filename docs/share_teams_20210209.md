@@ -192,12 +192,6 @@ my re-labeling code is here:
 
 each prediction
 
----
-
-
-
-
-
 ## A different approach from kudo
 
 ### CV
@@ -234,8 +228,16 @@ for fold, (train_index, valid_index) in enumerate(mskf.split(tp_fnames, tp_label
 
 I think this strategy is not good because tp_train and fp_train include duplicate files.
 
-### loss
+### loss function
 
 
-Don't work for me
-zero loss is using other label.(It is ambiguous Labels)
+There is more positive label than the negative label.I think there is more positive label than the negative label.
+I use positive loss decay.  
+
+```diff
++pos_w = 0 if posi_label.sum() == 0 else 1/posi_label.sum()
++loss = posi_loss*pos_w + nega_loss
+-loss = posi_loss + nega_loss
+```
+
+I don't use kudo's zero loss method for ambiguous labels.
