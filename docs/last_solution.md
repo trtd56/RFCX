@@ -14,7 +14,7 @@ Other team members are different in some things likes the base model and hyperpa
 
 ## 1st stage: pre-train
 
-※I think this part is not important. Team member Ahmet skips this part.
+*※I think this part is not important. Team member Ahmet skips this part.*
 
 This stage makes shift the model's ImageNet weight to this competition's spectrogram.
 
