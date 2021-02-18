@@ -129,8 +129,8 @@ Each stage LWLRAP is that:
 |2nd|0.7766|0.874|0.878|
 |3rd|0.7887|0.949|0.951|
 
+3rd stage's re-labeled LWRAP is 0.9621.
 
-0.9621
 
 ## predict
 
