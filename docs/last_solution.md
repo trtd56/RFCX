@@ -21,11 +21,20 @@ This stage makes shift the model's ImageNet weight to this competition's spectro
 Theo Viel's npz dataset can be regarded as 128x3751 size image.
 I cut to 512 by this image in sound point from t_min and t_max.
 I train this image by tp_train and 30 sampled fp_train.
+
+Parameter:
+- Adam
+- learning_rate=1e-3
+- CosineAnnealingLR(max_T=10)
+- epoch=50
+
 Continue 2nd and 3rd stage use this trained weight.
 
 ## 2nd stage: pseudo label re-labeling
 
 The purpose of stage2 is to improve model and make pseudo label by this model.
+
+Use 1st stage trained weight.
 
 The key point I think is to calculate gradient loss only labeled frame. The positive label was trained from tp_train.csv only and the negative label was trained from fp_train.csv only.
 I put 1 to positive label and -1 to negative label.
@@ -107,14 +116,34 @@ I predict each sliding window and put the pseudo label, so I got 8 labels in one
 |6|2778〜3290|44〜52|
 |7|3241〜3753|51〜60|
 
+
+Parameter:
+- Adam
+- learning_rate=3e-4
+- CosineAnnealingLR(max_T=5)
+- epoch=5
+
 ## 3rd stage: train by label re-labeled
 This stage train new label which re-labeled by 2nd stage model.
+
+Use 1st stage trained weight.
+
 The new label is ensemble by our team output like my 2nd stage.
+- our prediction average value is
+  - `>0.5`: soft positive = 2
+  - `<0.01`: soft negative = -2
 
 In this stage, I calculate gradient loss only labeled frame as with 2nd stage. 
 
-Some Tips:
-- The re-label's loss is weighted 0.5.
+Parameter:
+- Adam
+- learning_rate=3e-4
+- CosineAnnealingLR(max_T=5)
+- epoch=5
+
+Some My Tips:
+- Don't use soft negative.
+- The re-label's loss(soft positive) is weighted 0.5.
 - last layer mixup(from [this blog](https://medium.com/analytics-vidhya/better-result-with-mixup-at-final-layer-e9ba3a4a0c41))
 
 ## CV
@@ -138,6 +167,12 @@ In test time, I increase COVER to 256, so I got 14 labels in one 60's file.
 The prediction is max pooling in each patch.
 
 I use clipwise_output in training, and I use framewise_output in prediction. This approach came from [shinmura0's discussion thread](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684). Thank you  shinmura0:)
+
+## not good work for my model
+- TTA
+- 26 classes (divide song_type)
+- label wright loss
+- label smoothing(but team member's kuto improved)
 
 ---
 
