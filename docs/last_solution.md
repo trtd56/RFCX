@@ -117,6 +117,21 @@ Some Tips:
 - The re-label's loss is weighted 0.5.
 - last layer mixup(from [this blog](https://medium.com/analytics-vidhya/better-result-with-mixup-at-final-layer-e9ba3a4a0c41))
 
+## CV
+
+I use [iterative-stratification](https://github.com/trent-b/iterative-stratification)'s MultilabelStratifiedKFold. Validation data is made from tp_train only and fp_train data is used training in all fold.
+
+Each stage LWLRAP is that:
+
+|stage|CV|Public|Private|
+|--|--|--|--|
+|1st|0.7889|0.842|0.865|
+|2nd|0.7766|0.874|0.878|
+|3rd|0.7887|0.949|0.951|
+
+
+0.9621
+
 ## predict
 
 In test time, I increase COVER to 256, so I got 14 labels in one 60's file.
