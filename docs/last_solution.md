@@ -1,4 +1,4 @@
-# 5 place solution (Training Strategy)
+# 5th place solution (Training Strategy)
 
 Congratulations to all the participants, and thanks a lot to the organizers for this competition! This has been a very difficult but fun competition:)
 
@@ -16,13 +16,13 @@ Other team members are different in some things likes the base model and hyperpa
 
 *※I think this part is not important. Team member Ahmet skips this part.*
 
-This stage makes shift the model's ImageNet weight to this competition's spectrogram.
+This stage transfers learning from Imagenet to spectograms.
 
 Theo Viel's npz dataset can be regarded as 128x3751 size image.
 I cut to 512 by this image in sound point from t_min and t_max.
 I train this image by tp_train and 30 sampled fp_train.
 
-Parameter:
+Parameters:
 - Adam
 - learning_rate=1e-3
 - CosineAnnealingLR(max_T=10)
@@ -32,11 +32,11 @@ Continue 2nd and 3rd stage use this trained weight.
 
 ## 2nd stage: pseudo label re-labeling
 
-The purpose of stage2 is to improve model and make pseudo label by this model.
+The purpose of stage2 is to improve the model and make pseudo labels by this model.
 
 Use 1st stage trained weight.
 
-The key point I think is to calculate gradient loss only labeled frame. The positive label was trained from tp_train.csv only and the negative label was trained from fp_train.csv only.
+The key point I think is to calculate gradient loss only labeled frame. The positive labels were sampled from tp_train.csv only and the negative labels were sampled from fp_train.csv only.
 I put 1 to positive label and -1 to negative label.
 
 ```python
@@ -85,7 +85,7 @@ def rfcx_2nd_criterion(outputs, targets):
 ```
 
 And image are cut and stack by sliding window.
-I set the window size to 512 and cut out the entire range of 60's audio data by covering it little by little. Cover 49 pixels each, considering that important sounds are located at the boundaries of the division.
+I set the window size to 512 and cut out the entire range of 60's audio data by covering it little by little. Cover 49 pixels each, considering that important sounds may be located at the boundaries of the division.
 
 ```python
 N_SPLIT_IMG = 8
@@ -103,7 +103,7 @@ print(slide_img_pos)
 # [[0, 512], [463, 975], [926, 1438], [1389, 1901], [1852, 2364], [2315, 2827], [2778, 3290], [3241, 3753]]
 ```
 
-I predict each sliding window and put the pseudo label, so I got 8 labels in one 60's file.
+I predict each sliding window and put the pseudo label, so I got 8 windows in one 60 sec recording.
 
 |patch idx|pixcel|time(s)|
 |--|--|--|
@@ -117,14 +117,14 @@ I predict each sliding window and put the pseudo label, so I got 8 labels in one
 |7|3241〜3753|51〜60|
 
 
-Parameter:
+Parameters:
 - Adam
 - learning_rate=3e-4
 - CosineAnnealingLR(max_T=5)
 - epoch=5
 
 ## 3rd stage: train by label re-labeled
-This stage train new label which re-labeled by 2nd stage model.
+This stage trains on the new labels re-labeled by 2nd stage model.
 
 Use 1st stage trained weight.
 
@@ -135,7 +135,7 @@ The new label is ensemble by our team output like my 2nd stage.
 
 In this stage, I calculate gradient loss only labeled frame as with 2nd stage. 
 
-Parameter:
+Parameters:
 - Adam
 - learning_rate=3e-4
 - CosineAnnealingLR(max_T=5)
@@ -163,12 +163,12 @@ Each stage LWLRAP is that:
 
 ## predict
 
-In test time, I increase COVER to 256, so I got 14 labels in one 60's file.
+In test time, I increase COVER to 256, so I got 14 windows in one 60 sec recording.
 The prediction is max pooling in each patch.
 
 I use clipwise_output in training, and I use framewise_output in prediction. This approach came from [shinmura0's discussion thread](https://www.kaggle.com/c/rfcx-species-audio-detection/discussion/209684). Thank you  shinmura0:)
 
-## not good work for my model
+## did not work for my model
 - TTA
 - 26 classes (divide song_type)
 - label wright loss
@@ -177,7 +177,7 @@ I use clipwise_output in training, and I use framewise_output in prediction. Thi
 ---
 
 Finally, I would like to thank the team members.
-If I alone, I couldn't get these result.
+If I was alone, I couldn't get these result.
 kuto, Ahmet, thank you very much.
 
 My code:
